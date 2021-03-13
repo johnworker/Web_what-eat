@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>吃什麼網站</title>
+    <!-- slick CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <div></div>
+        <div id="link">
+            <a href="">美食簡介</a>
+            <a href="">美食推薦</a>
+            <a href="" class="logo">{LEO}</a>
+            <a href="">遊戲模式</a>
+            <a href="">聯絡方式</a>
+        </div>
+        <div id="social">
+            <a href=""><img src="./img/youtube.png" alt=""></a>
+            <a href=""><img src="./img/instagram.png" alt=""></a>
+            <a href=""><img src="./img/facebook.png" alt=""></a>
+            <a href=""><img src="./img/github.png" alt=""></a>
+        </div>
+    </nav>
+
+    <!-- 輪播 -->
+    <div id="banner">
+        <!-- (.banner$>h1{標題一}+h2{標題二})*3 -->
+        <div class="banner1">
+            <h1>沙拉</h1>
+            <h2>沙拉的種類包括蛋沙拉、雞丁沙拉、鮪魚沙拉、蝦沙拉和火腿沙拉。<br>
+                在丹麥，人們將沙拉加上肉片製成上層不蓋麵包的開口三明治。</h2>
+        </div>
+        <div class="banner2">
+            <h1>點心</h1>
+            <h2>原料包括麵粉、牛奶、牛油、沙糖、奶油、巧克力、生果、果仁等，輔助以各種食品添加劑，<br>
+                並以焗爐高溫烘製為主，或以特定的工藝製成。</h2>
+        </div>
+        <div class="banner3">
+            <h1>牛排</h1>
+            <h2>清末小說中已出現「牛排」、「豬排」等西菜菜名，可能是因形似上海「大排」（豬丁骨），故名「排」。<br>
+                而英語中表示牛排的「steak」一詞則源自古諾爾斯語詞「steik」，後者意即烤牛肉。</h2>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slick CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./main.js"></script>
+
+    <!-- 最新消息 -->
+    <section id="news">
+        <h1>最新消息</h1>
+        <div id="news-content">
+            <!-- (.news-card>img+h3{標題三}+p{lorem10}+button{按鈕})*3 -->
+            <div class="news-card">
+                <img src="" alt="">
+                <h3>標題三</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, deserunt!</p>
+                <button>按鈕</button>
+            </div>
+            <div class="news-card">
+                <img src="" alt="">
+                <h3>標題三</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, consectetur?</p>
+                <button>按鈕</button>
+            </div>
+            <div class="news-card">
+                <img src="" alt="">
+                <h3>標題三</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, vero.</p>
+                <button>按鈕</button>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
