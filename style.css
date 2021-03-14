@@ -137,4 +137,45 @@ nav #social a:hover {
   font-size: 24px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
+
+#news {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+#news #news-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#news #news-content img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#news #news-content h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+#news #news-content p {
+  line-height: 1.5;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  background: #252525;
+  color: #e9e9e9;
+  padding: 10px 30px;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 20px;
+}
 /*# sourceMappingURL=style.css.map */
