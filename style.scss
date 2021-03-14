@@ -67,7 +67,7 @@ nav {
     letter-spacing: 3px;
 
     &:hover {
-        transform: scale(2) !important;
+        transform: scale(1.5) !important;
     }
 }
 
@@ -143,6 +143,75 @@ nav {
     }
 }
 
+// 最新遊戲
+#work {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    &:focus {
+        outline: none;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        /* border-radius: 50%; 寬高要相同(圓形) */
+        border-radius: 50%;
+        display: block;
+        /* 顯示模式：區塊 */
+        margin: 0 auto;
+        /* 區塊元素 block 才能margin:0 auto; */
+        transition: 0.5s;
+
+        &:hover {
+            border-radius: 5px;
+        }
+        
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 10px;
+        color: $color-gray;
+        
+    }
+}
+
+// 聯絡LEO
+form {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0 100px;
+
+    input {
+        width: 46%;
+        padding: 10px;
+
+        &::placeholder {
+            color: $color-gray;
+            font-size: 14px;
+        }
+    }
+
+    input[type=email] {
+        float: right;
+    }
+
+    textarea {
+        width: 100%;
+        height: 300px;
+        margin: 30px 0;
+        padding: 10px;
+
+        &::placeholder {
+            color: $color-gray;
+            font-size: 14px;
+        }
+    }
+}
+
 // 統一樣式
 // 按鈕樣式
 .btn {
@@ -170,20 +239,5 @@ nav {
     padding: 10px 0 30px;
     font-size: 30px;
     font-weight: 900;
+    margin-top: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
