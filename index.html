@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>吃什麼網站</title>
     <!-- slick CDN -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <!-- 導覽列 -->
     <nav>
@@ -108,16 +110,37 @@
 
     <h1 class="title-big">聯絡我</h1>
     <!-- 表單元素 action="" 傳遞給後端頁面，通常是 XXX.php -->
-    <form action="get.Massage.php">
+    <!-- 要設定 input type="submit" 表單資料才會傳到後端-->
+    <!-- 方法：傳送資料的方式 -->
+    <!-- GET 曝光表單資料 -->
+    <!-- POST 不會曝光表單資料 -->
+    <form action="get.Massage.php" method="POST">
         <input type="text" name="user-name" placeholder="請輸入您的姓名" required>
         <input type="email" name="user-email" placeholder="請輸入您的信箱" required>
         <textarea placeholder="輸入你想對LEO說的話"></textarea>
         <input type="submit" value="送出" class="btn">
     </form>
 
+    <!-- 頁尾 -->
+    <footer>
+        <div>
+            <a href="" class="logo">{LEO}</a>
+        </div>
+        <small id="copy">
+            &copy; LEO 2021.
+        </small>
+        <div id="link">
+            <a href="">美食簡介</a>
+            <a href="">美食推薦</a>
+            <a href="">遊戲模式</a>
+            <a href="">聯絡方式</a>
+        </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- slick CDN -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
