@@ -15,6 +15,26 @@ $mobile: 767px;                                 //手機尺寸
 }
 
 // 導覽列
+#menu {
+    background-image: url(./img/menu.png);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: none;
+
+    @media screen and (max-width: $tablet) {
+        display: block;
+        margin: 0 40px 0 auto;
+    }
+
+    @media screen and (max-width: $mobile) {
+        margin: 0 50px 0 auto;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+}
+
 nav {
     display: grid;
     grid-template-columns: 15% auto 15%;
@@ -27,7 +47,16 @@ nav {
     z-index: 3;
     width: 100%;
 
+    @media screen and (max-width: $tablet) {
+        grid-template-columns: 100% 0;
+    }
+
     #link {
+
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
+
         a {
             color: $color-black;
             text-decoration: none;
@@ -45,6 +74,13 @@ nav {
     }
 
     #social {
+
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
+
+        margin-right: 20px;
+
         a {
             transition: 0.3s;
             padding: 0 10px;

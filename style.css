@@ -6,6 +6,30 @@
   font-family: 微軟正黑體;
 }
 
+#menu {
+  background-image: url(./img/menu.png);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #menu {
+    display: block;
+    margin: 0 40px 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #menu {
+    margin: 0 50px 0 auto;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+  }
+}
+
 nav {
   display: -ms-grid;
   display: grid;
@@ -20,6 +44,19 @@ nav {
   position: fixed;
   z-index: 3;
   width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    -ms-grid-columns: 100% 0;
+        grid-template-columns: 100% 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav #link {
+    display: none;
+  }
 }
 
 nav #link a {
@@ -37,6 +74,16 @@ nav #link a:hover {
   color: #999;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+nav #social {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  nav #social {
+    display: none;
+  }
 }
 
 nav #social a {
