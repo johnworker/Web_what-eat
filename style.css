@@ -121,9 +121,33 @@ nav #social a img {
   z-index: 2;
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .slick-prev {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .slick-prev {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  }
+}
+
 #banner .slick-next {
   right: 50px;
   z-index: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  #banner .slick-next {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .slick-next {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  }
 }
 
 #banner .slick-dots {
@@ -138,6 +162,12 @@ nav #social a img {
   color: #e9e9e9;
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .banner1 {
+    background-size: cover;
+  }
+}
+
 #banner .banner1:focus {
   outline: none;
 }
@@ -148,9 +178,38 @@ nav #social a img {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .banner1 h1 {
+    padding: 400px 0 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner1 h1 {
+    padding: 300px 0 30px;
+    font-size: 36px;
+  }
+}
+
 #banner .banner1 h2 {
   font-size: 24px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 1024px) {
+  #banner .banner1 h2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner1 h2 {
+    width: 50%;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
 }
 
 #banner .banner2 {
@@ -158,6 +217,12 @@ nav #social a img {
   height: 100vh;
   text-align: center;
   color: #e9e9e9;
+}
+
+@media screen and (max-width: 1024px) {
+  #banner .banner2 {
+    background-size: cover;
+  }
 }
 
 #banner .banner2:focus {
@@ -170,9 +235,38 @@ nav #social a img {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .banner2 h1 {
+    padding: 400px 0 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner2 h1 {
+    padding: 300px 0 30px;
+    font-size: 36px;
+  }
+}
+
 #banner .banner2 h2 {
   font-size: 24px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 1024px) {
+  #banner .banner2 h2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner2 h2 {
+    width: 50%;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
 }
 
 #banner .banner3 {
@@ -180,6 +274,12 @@ nav #social a img {
   height: 100vh;
   text-align: center;
   color: #e9e9e9;
+}
+
+@media screen and (max-width: 1024px) {
+  #banner .banner3 {
+    background-size: cover;
+  }
 }
 
 #banner .banner3:focus {
@@ -192,14 +292,51 @@ nav #social a img {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .banner3 h1 {
+    padding: 400px 0 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner3 h1 {
+    padding: 300px 0 30px;
+    font-size: 36px;
+  }
+}
+
 #banner .banner3 h2 {
   font-size: 24px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .banner3 h2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .banner3 h2 {
+    width: 50%;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+}
+
 #news {
   width: 1280px;
   margin: 0 auto;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #news {
+    width: 100%;
+    padding: 20px 20px;
+  }
 }
 
 #news #news-content {
@@ -208,6 +345,14 @@ nav #social a img {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #news #news-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
 }
 
 #news #news-content .news-card {
@@ -236,7 +381,13 @@ nav #social a img {
 #work {
   width: 1280px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #work {
+    width: 100%;
+  }
 }
 
 #work:focus {
@@ -244,8 +395,8 @@ nav #social a img {
 }
 
 #work img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   /* border-radius: 50%; 寬高要相同(圓形) */
