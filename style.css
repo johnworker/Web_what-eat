@@ -382,6 +382,7 @@ nav #social a img {
   width: 1280px;
   margin: 0 auto;
   margin-top: 100px 0;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -425,9 +426,23 @@ form {
   padding: 20px 0 100px;
 }
 
+@media screen and (max-width: 1024px) {
+  form {
+    width: 100%;
+    padding: 20px 20px 100px;
+  }
+}
+
 form input {
   width: 47%;
   padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  form input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 form input::-webkit-input-placeholder {
@@ -453,6 +468,18 @@ form input::placeholder {
 form input[type=email] {
   float: right;
   margin: 0 -1.5%;
+}
+
+@media screen and (max-width: 1024px) {
+  form input[type=email] {
+    margin: 0 -2.5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  form input[type=email] {
+    margin: 0 -6.5%;
+  }
 }
 
 form textarea {
@@ -505,6 +532,13 @@ footer #link a {
   text-decoration: none;
   font-size: 14px;
   padding: 0 5px;
+}
+
+@media screen and (max-width: 767px) {
+  footer #link a {
+    display: block;
+    padding: 8px 0;
+  }
 }
 
 footer #copy {
