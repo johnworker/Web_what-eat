@@ -14,6 +14,10 @@ $mobile: 767px;                                 //手機尺寸
     font-family: 微軟正黑體;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 // 導覽列
 #menu {
     background-image: url(./img/menu.png);
