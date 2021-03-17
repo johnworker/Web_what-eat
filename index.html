@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>吃什麼網站</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- slick CDN -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -55,21 +56,24 @@
     <!-- 最新消息 -->
     <section id="news">
         <h1 class="title-big">最新消息</h1>
-        <div id="news-content">
+        <div id="news-content" >
             <!-- (.news-card>img+h3{標題三}+p{lorem10}+button{按鈕})*3 -->
-            <div class="news-card">
+            <div class="news-card" data-aos="flip-left"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
                 <img src="./img/banner1.jpg" alt="">
                 <h3>標題三</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, deserunt!</p>
                 <button class="btn">按鈕</button>
             </div>
-            <div class="news-card">
+            <div class="news-card"data-aos="flip-left"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
                 <img src="./img/banner1.jpg" alt="">
                 <h3>標題三</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, consectetur?</p>
                 <button class="btn">按鈕</button>
             </div>
-            <div class="news-card">
+            <div class="news-card" data-aos="flip-left"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
                 <img src="./img/banner1.jpg" alt="">
                 <h3>標題三</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, vero.</p>
@@ -138,6 +142,12 @@
         </div>
     </footer>
 
+    
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- slick CDN -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
