@@ -50,6 +50,7 @@ nav {
   position: fixed;
   z-index: 3;
   width: 100%;
+  height: 110px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -65,14 +66,21 @@ nav #link-work {
   padding: 0 60px;
   vertical-align: 10px;
   color: #252525;
+  height: 300px;
 }
 
 nav #link-work:hover .sub-link {
-  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 nav .sub-link {
-  display: none;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
   position: absolute;
   top: 56px;
   left: 4px;

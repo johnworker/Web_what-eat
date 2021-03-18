@@ -53,6 +53,7 @@ nav {
     position: fixed;
     z-index: 3;
     width: 100%;
+    height: 110px;
 
     @media screen and (max-width: $tablet) {
         grid-template-columns: 100% 0;
@@ -64,14 +65,21 @@ nav {
         padding: 0 60px;
         vertical-align: 10px;
         color: $color-black;
+        height: 300px;
 
+        // 滑入後 顯示 裡面的 子分頁元素
         &:hover .sub-link{
-            display: block;
+            // display: block;
+            transform: scale(1);
         }
     }
 
     .sub-link {
-        display: none;
+        // display: none;
+        // 第二種作法
+        transform: scale(0);
+        transition: 1s;
+        transform-origin: top;
         position: absolute;
         top: 56px;
         left: 4px;
