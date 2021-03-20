@@ -128,7 +128,7 @@ nav {
             padding: 0 10px;
 
             &:hover {
-                filter: invert(26%) sepia(72%) saturate(430%) hue-rotate(329deg) brightness(91%) contrast(85%);
+                filter: invert(43%) sepia(92%) saturate(1169%) hue-rotate(6deg) brightness(97%) contrast(101%);
             }
 
             img {
@@ -197,7 +197,7 @@ nav {
                 outline: none;
             }
     
-            h1 {
+            h2 {
                 padding: 300px 0 100px;
                 font-size: 60px;
                 text-shadow: $text-shadow;   
@@ -212,7 +212,7 @@ nav {
                 }
             }
     
-            h2 {
+            h3 {
                 font-size: 24px;
                 text-shadow: $text-shadow;
 
@@ -233,6 +233,39 @@ nav {
         }
     }
 }
+// 關於APP
+#about {
+    background-image: url(./img/about.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    .big_box {
+        position: relative;
+        height: 100vh;
+        margin-top: 20px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+
+        h2 {
+            font-size: 48px;
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            color: $color-black;
+            
+        }
+
+        p {
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+            padding: 10px 200px 80px;
+            color: $color-black;
+            font-weight: 500;
+            line-height: 40px;
+        }
+    }
+}
 
 // 最新消息
 #news {
@@ -248,7 +281,7 @@ nav {
     #news-content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        grid-gap: 50px;
 
         @media screen and (max-width: $mobile) {
             grid-template-columns: 1fr;
@@ -265,7 +298,7 @@ nav {
             object-fit: cover;
         }
 
-        h3 {
+        h4 {
             text-align: center;
             padding: 10px;
         }
@@ -313,7 +346,7 @@ nav {
         
     }
 
-    h2 {
+    h3 {
         text-align: center;
         margin-top: 10px;
         color: $color-gray;

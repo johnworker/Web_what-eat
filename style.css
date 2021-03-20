@@ -133,8 +133,8 @@ nav #social a {
 }
 
 nav #social a:hover {
-  -webkit-filter: invert(26%) sepia(72%) saturate(430%) hue-rotate(329deg) brightness(91%) contrast(85%);
-          filter: invert(26%) sepia(72%) saturate(430%) hue-rotate(329deg) brightness(91%) contrast(85%);
+  -webkit-filter: invert(43%) sepia(92%) saturate(1169%) hue-rotate(6deg) brightness(97%) contrast(101%);
+          filter: invert(43%) sepia(92%) saturate(1169%) hue-rotate(6deg) brightness(97%) contrast(101%);
 }
 
 nav #social a img {
@@ -212,39 +212,39 @@ nav #social a img {
   outline: none;
 }
 
-#banner .banner1 h1 {
+#banner .banner1 h2 {
   padding: 300px 0 100px;
   font-size: 60px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (max-width: 1024px) {
-  #banner .banner1 h1 {
+  #banner .banner1 h2 {
     padding: 400px 0 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  #banner .banner1 h1 {
+  #banner .banner1 h2 {
     padding: 300px 0 30px;
     font-size: 36px;
   }
 }
 
-#banner .banner1 h2 {
+#banner .banner1 h3 {
   font-size: 24px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (max-width: 1024px) {
-  #banner .banner1 h2 {
+  #banner .banner1 h3 {
     width: 80%;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 767px) {
-  #banner .banner1 h2 {
+  #banner .banner1 h3 {
     width: 50%;
     font-size: 20px;
     margin: 0 auto;
@@ -269,39 +269,39 @@ nav #social a img {
   outline: none;
 }
 
-#banner .banner2 h1 {
+#banner .banner2 h2 {
   padding: 300px 0 100px;
   font-size: 60px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (max-width: 1024px) {
-  #banner .banner2 h1 {
+  #banner .banner2 h2 {
     padding: 400px 0 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  #banner .banner2 h1 {
+  #banner .banner2 h2 {
     padding: 300px 0 30px;
     font-size: 36px;
   }
 }
 
-#banner .banner2 h2 {
+#banner .banner2 h3 {
   font-size: 24px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (max-width: 1024px) {
-  #banner .banner2 h2 {
+  #banner .banner2 h3 {
     width: 80%;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 767px) {
-  #banner .banner2 h2 {
+  #banner .banner2 h3 {
     width: 50%;
     font-size: 20px;
     margin: 0 auto;
@@ -326,44 +326,76 @@ nav #social a img {
   outline: none;
 }
 
-#banner .banner3 h1 {
+#banner .banner3 h2 {
   padding: 300px 0 100px;
   font-size: 60px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (max-width: 1024px) {
-  #banner .banner3 h1 {
+  #banner .banner3 h2 {
     padding: 400px 0 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  #banner .banner3 h1 {
+  #banner .banner3 h2 {
     padding: 300px 0 30px;
     font-size: 36px;
   }
 }
 
-#banner .banner3 h2 {
+#banner .banner3 h3 {
   font-size: 24px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (max-width: 1024px) {
-  #banner .banner3 h2 {
+  #banner .banner3 h3 {
     width: 80%;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 767px) {
-  #banner .banner3 h2 {
+  #banner .banner3 h3 {
     width: 50%;
     font-size: 20px;
     margin: 0 auto;
     line-height: 1.5;
   }
+}
+
+#about {
+  background-image: url(./img/about.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#about .big_box {
+  position: relative;
+  height: 100vh;
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#about .big_box h2 {
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  color: #252525;
+}
+
+#about .big_box p {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 200px 80px;
+  color: #252525;
+  font-weight: 500;
+  line-height: 40px;
 }
 
 #news {
@@ -384,7 +416,7 @@ nav #social a img {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -407,7 +439,7 @@ nav #social a img {
      object-fit: cover;
 }
 
-#news #news-content h3 {
+#news #news-content h4 {
   text-align: center;
   padding: 10px;
 }
@@ -454,7 +486,7 @@ nav #social a img {
   border-radius: 5px;
 }
 
-#work h2 {
+#work h3 {
   text-align: center;
   margin-top: 10px;
   color: #999;
