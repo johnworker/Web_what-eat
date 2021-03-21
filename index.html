@@ -47,13 +47,13 @@
             <a href="">美食推薦</a>
             <a href="./index.html" class="logo">{LEO}</a>
             <a href="">遊戲模式</a>
-            <a href="">聯絡方式</a>
+            <a href="" data-st-target="list" data-st-duration="1000" data-st-offset="100">聯絡方式</a>
         </div>
         <div id="social">
             <a href="https://www.youtube.com/results?search_query=eat+what" target="blank"><img src="./img/youtube.png" alt=""></a>
             <a href=""><img src="./img/instagram.png" alt=""></a>
             <a href=""><img src="./img/facebook.png" alt=""></a>
-            <a href=""><img src="./img/github.png" alt=""></a>
+            <a href="https://github.com/" target="blank"><img src="./img/github.png" alt=""></a>
         </div>
     </nav>
 
@@ -188,7 +188,7 @@
         </div>
     </div>
 
-    <h2 class="title-big">聯絡我</h2>
+    <h2 id="list" class="title-big">聯絡我</h2>
     <!-- 表單元素 action="" 傳遞給後端頁面，通常是 XXX.php -->
     <!-- 要設定 input type="submit" 表單資料才會傳到後端-->
     <!-- 方法：傳送資料的方式 -->
@@ -217,7 +217,11 @@
         </div>
     </footer>
 
+    <!-- data-st-top 箭頭要出現的高度 -->
+    <!-- data-st-time 特效的持續時間 -->
+    <a id="arrow" data-st-target="top" data-st-duration="800" data-st-top="300" data-st-time="1000"></a>
 
+    
     <!-- AOS CDN -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
