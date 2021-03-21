@@ -876,10 +876,21 @@ section {
 }
 
 section .boxing {
+  width: 100%;
+}
+
+section .boxing .box_magic {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  grid-gap: 80px;
+}
+
+section .boxing .image_box {
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 section .boxing img {
@@ -887,20 +898,45 @@ section .boxing img {
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 100px;
+  margin: 0 100px;
+}
+
+section .boxing .text_box {
+  margin: 0;
+  padding-right: 30%;
+  display: block;
 }
 
 section .boxing h4 {
   text-align: center;
-  padding: 60px 10px 10px;
+  padding: 20px 10px 10px;
   font-size: 32px;
   font-weight: bold;
 }
 
 section .boxing p {
   font-size: 20px;
-  padding: 10px;
+  padding: 10px 0;
   line-height: 2.5;
+}
+
+section .boxing .box_magic:nth-child(even) {
+      grid-template-areas: "text pic";
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  margin-left: 10%;
+}
+
+section .boxing .box_magic:nth-child(even) .image_box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pic;
+}
+
+section .boxing .box_magic:nth-child(even) .text_box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
 }
 
 .btn {
