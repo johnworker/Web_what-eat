@@ -160,6 +160,7 @@ nav {
     }
 }
 
+// 輪播
 #banner {
     .slick-prev {
         left: 50px;
@@ -211,6 +212,10 @@ nav {
                 text-shadow: $text-shadow;   
 
                 @media screen and (max-width: $tablet) {
+                    padding: 600px 0 50px;
+                }
+
+                @media screen and (max-width: $tablets) {
                     padding: 400px 0 50px;
                 }
 
@@ -224,10 +229,18 @@ nav {
                 font-size: 24px;
                 text-shadow: $text-shadow;
 
-                
                 @media screen and (max-width: $tablet) {
                     width: 80%;
                     margin: 0 auto;
+                    line-height: 1.5;
+                    font-size: 30px;
+                }
+                
+                @media screen and (max-width: $tablets) {
+                    width: 80%;
+                    margin: 0 auto;
+                    line-height: 1.3;
+                    font-size: 24px;
                 }
 
                 @media screen and (max-width: $mobile) {
