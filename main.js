@@ -70,7 +70,7 @@ arrow.fadeOut();
 // 箭頭顯示與隱藏效果
 $(window).scroll(function () { 
     var windowTop = $(this).scrollTop();
-    console.log("視窗的上方:" + windowTop)
+    // console.log("視窗的上方:" + windowTop)
  
     var arrowTop = arrow.attr("data-st-top");
     var arrowTime = arrow.attr("data-st-time");
