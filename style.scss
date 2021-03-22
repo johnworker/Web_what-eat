@@ -583,14 +583,14 @@ main {
         padding: 10px 0;
         font-size: 48px;
         font-weight: 900;
-        margin: 250px 300px 100px;
+        margin: 250px 500px 100px;
         animation: title-word 1s 1s;
         animation-fill-mode: backwards;
     }
 
     @keyframes title-word {
         0% {
-            transform: translateX(-500px);
+            transform: translateX(-1000px);
         }
 
         100% {
@@ -626,11 +626,11 @@ main {
 section {
     width: 1280px;
     height: 100%;
-    margin: 100px;
+    margin: 100px auto;
 
     .boxing {
         width: 100%;
-        
+        margin: 0 auto;
         
 
         .box_magic {
@@ -672,16 +672,16 @@ section {
         }
 
 
-        // .box_magic:nth-child(odd) {
-            // grid-template-areas: "pic text";
-            // grid-template-columns: 60% 40%;
-        // }
-        // .box_magic:nth-child(odd) .image_box {
-            // grid-area: pic;
-        // }
-        // .box_magic:nth-child(odd) .text_box {
-            // grid-area: text;
-        // }
+        .box_magic:nth-child(odd) {
+            grid-template-areas: "pic text";
+            grid-template-columns: 60% 40%;
+        }
+        .box_magic:nth-child(odd) .image_box {
+            grid-area: pic;
+        }
+        .box_magic:nth-child(odd) .text_box {
+            grid-area: text;
+        }
 
         .box_magic:nth-child(even) {
             grid-template-areas: "text pic";

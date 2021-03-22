@@ -820,7 +820,7 @@ main .title-word {
   padding: 10px 0;
   font-size: 48px;
   font-weight: 900;
-  margin: 250px 300px 100px;
+  margin: 250px 500px 100px;
   -webkit-animation: title-word 1s 1s;
           animation: title-word 1s 1s;
   -webkit-animation-fill-mode: backwards;
@@ -829,8 +829,8 @@ main .title-word {
 
 @-webkit-keyframes title-word {
   0% {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -840,8 +840,8 @@ main .title-word {
 
 @keyframes title-word {
   0% {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -874,11 +874,12 @@ main p {
 section {
   width: 1280px;
   height: 100%;
-  margin: 100px;
+  margin: 100px auto;
 }
 
 section .boxing {
   width: 100%;
+  margin: 0 auto;
 }
 
 section .boxing .box_magic {
@@ -920,6 +921,24 @@ section .boxing p {
   font-size: 20px;
   padding: 10px 0;
   line-height: 2.5;
+}
+
+section .boxing .box_magic:nth-child(odd) {
+      grid-template-areas: "pic text";
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+section .boxing .box_magic:nth-child(odd) .image_box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pic;
+}
+
+section .boxing .box_magic:nth-child(odd) .text_box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
 }
 
 section .boxing .box_magic:nth-child(even) {
