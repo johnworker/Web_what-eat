@@ -888,6 +888,7 @@ section .boxing .box_magic {
   -ms-grid-columns: 60% 40%;
       grid-template-columns: 60% 40%;
   grid-gap: 80px;
+  margin-bottom: 100px;
 }
 
 section .boxing .image_box {
