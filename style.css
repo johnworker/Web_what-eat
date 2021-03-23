@@ -982,7 +982,7 @@ section .boxing .box_magic:nth-child(even) .text_box {
   color: #252525;
 }
 
-.title-big {
+.title-big, .title-new-word {
   text-align: center;
   padding: 10px 0 30px;
   font-size: 30px;
@@ -990,13 +990,48 @@ section .boxing .box_magic:nth-child(even) .text_box {
   margin-top: 50px;
 }
 
+.title-new-word {
+  padding: 150px 0 50px;
+  font-size: 48px;
+  -webkit-animation: title-new-word 1s 1s;
+          animation: title-new-word 1s 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes title-new-word {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes title-new-word {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 #carouselExampleFade {
   width: 1000px;
   height: 800px;
-  margin: 250px 260px;
+  margin: 0 auto;
 }
 
 .carousel-control-prev, .carousel-control-next {
   display: none;
+}
+
+.slider-item:nth-of-type(3) {
+  background-image: url(https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,6 +14,7 @@
     <!-- bootstrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://johnworker.github.io/Web_javascript_slide/style.css">
 
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -54,44 +55,30 @@
             <a href=""><img src="./img/github.png" alt=""></a>
         </div>
     </nav>
-
-    <!-- 主要內容 -->
-    <main>
-        <h2 class="title-word">甜點</h2>
-        <img src="./img/dessert1.jpg" alt="">
-        <div class="writings">
-            <h3>麵包</h3>
-            <p>麵包是一種用五穀（一般是麥類）磨粉製作並加熱而製成的食品。<br>
-            小圓麵包是一種小而簡單易做的麵包，通常是甜的。
-            小圓麵包通常介於小孩的拳頭和成人的手掌之間。</p>
-        </div>
-    </main>
-
-    <!-- 區塊內容介紹 -->
-    <section>
-        <div class="boxing">
-            <div class="box_magic">
-                <div class="image_box">
-                    <img src="./img/dessert2.jpg" alt="">
-                </div>
-                <div class="text_box">
-                    <h4>甜甜圈</h4>
-                    <p>甜甜圈，中國大陸稱為甜甜圈，香港稱為冬甩，又稱圈餅、多拿滋、唐納滋，是一種用麵粉、砂糖、奶油和雞蛋混合後經過油炸的甜食。最普遍的兩種形狀是中空的環狀、或麵團中間有包入奶油、卡士達等甜餡料的封閉型甜甜圈。
-                    在美國有許多人以甜甜圈作為早餐的主食，並設立有甜甜圈日。近期甜甜圈的口味跟種類發展十分快速，研發出形形色色的口味。在亞洲，甜甜圈主要是被當成點心類的食物。</p>
-                </div>
-            </div>
-
-            <div class="box_magic">
-                <div class="image_box">
-                    <img src="./img/dessert3.jpg" alt="">
-                </div>
-                <div class="text_box">
-                    <h4>鬆餅</h4>
-                    <p>華夫餅又稱為格子鬆餅、比利時鬆餅、格仔餅、壓花蛋餅，是一種烤餅，源於比利時，用華夫餅烘烤模烤成。烤盤上下兩面呈格子狀，一凹一凸，把倒進去的麵糊（或麵糰）壓出格子來。</p>
-                </div>
-            </div>
-        </div>
-    </section>
+     
+    <!-- 輪播圖大盒子 -->
+    <!-- 寫法：#slider-box>(.slider-item>h1)*3 -->
+    <div id="slider-box" data-s-interval="3000" data-s-showdots="true" >
+    <!-- 輪播圖內的項目，圖片與內容 -->
+    <div class="slider-item slider-active">
+        <h1>衣服 1</h1>
+    </div>
+    <div class="slider-item">
+        <h1>衣服 2</h1>
+    </div>
+    <div class="slider-item">
+        <h1>衣服 3</h1>
+    </div>
+    <!-- 上一張與下一張按鈕 -->
+    <div id="slider-prev"></div>
+    <div id="slider-next"></div>
+    <!-- 點點 -->
+    <!-- 寫法：#slider-dots>(span.slider-dots)*3 -->
+    <div id="slider-dots">
+        <span class="slider-dot slider-dot-active"></span>
+        <span class="slider-dot"></span>
+        <span class="slider-dot"></span>
+  
 
     <!-- 頁尾 -->
     <footer>
@@ -121,6 +108,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <!-- 自製輪播 CDN -->
+    <script src="https://johnworker.github.io/Web_javascript_slide/main.js"></script>
+
     <script src="./main.js"></script>
 </body>
 
