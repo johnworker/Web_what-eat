@@ -57,6 +57,12 @@ $(".mini_box").slick({
     ]
 });
 
+// bootstrap 輪播(淡入淡出)
+ $("#carouselExampleFade").carousel({
+    interval: 3000,
+    pause: false
+ });
+
 // 捲動效果
 
 // 使用者滑鼠滾動時 停止所有動畫

@@ -731,3 +731,14 @@ section {
     font-weight: 900;
     margin-top: 50px;
 }
+
+// bootstrap 輪播(淡入淡出)
+#carouselExampleFade {
+    width: 1000px;
+    height: 800px;
+    margin: 250px 260px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    display: none;
+}

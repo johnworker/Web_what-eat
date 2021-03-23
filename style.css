@@ -989,4 +989,14 @@ section .boxing .box_magic:nth-child(even) .text_box {
   font-weight: 900;
   margin-top: 50px;
 }
+
+#carouselExampleFade {
+  width: 1000px;
+  height: 800px;
+  margin: 250px 260px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
