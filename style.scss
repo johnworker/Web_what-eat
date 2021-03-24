@@ -708,7 +708,7 @@ section {
             height: 600px;
             object-fit: cover;
             margin: 0 100px;
-
+            
             @media screen and (max-width: $tablet) {
                 margin: 0 290px;
             }
@@ -719,10 +719,11 @@ section {
             padding-right: 30%;
             display: block;
             width: 100%;
-            
+
             @media screen and (max-width: $tablet) {
-               padding: none !important;
+                margin: 0 auto;
             }
+            
         }
 
         h4 {
@@ -756,6 +757,7 @@ section {
 
             @media screen and (max-width: $tablet) {
                 grid-template-columns: 1fr;
+                margin: 0 auto;
             }
         }
         .box_magic:nth-child(odd) .image_box {
@@ -763,15 +765,18 @@ section {
         }
         .box_magic:nth-child(odd) .text_box {
             grid-area: text;
+            padding: 0 100px;
         }
 
         .box_magic:nth-child(even) {
             grid-template-areas: "text pic";
             grid-template-columns: 40% 60%;
-            margin-left: 10%;
+            margin-left: 15%;
 
             @media screen and (max-width: $tablet) {
                 grid-template-columns: 1fr;
+                margin: 0 auto;
+
             }
         }
 
@@ -781,6 +786,10 @@ section {
 
         .box_magic:nth-child(even) .text_box {
             grid-area: text;
+            
+            @media screen and (max-width: $tablet) {
+                padding: 0 100px;
+            }
         }
     }
 }

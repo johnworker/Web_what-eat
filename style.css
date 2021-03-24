@@ -997,7 +997,7 @@ section .boxing .text_box {
 
 @media screen and (max-width: 1024px) {
   section .boxing .text_box {
-    padding: none !important;
+    margin: 0 auto;
   }
 }
 
@@ -1037,6 +1037,7 @@ section .boxing .box_magic:nth-child(odd) {
   section .boxing .box_magic:nth-child(odd) {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }
 
@@ -1050,19 +1051,21 @@ section .boxing .box_magic:nth-child(odd) .text_box {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: text;
+  padding: 0 100px;
 }
 
 section .boxing .box_magic:nth-child(even) {
       grid-template-areas: "text pic";
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 @media screen and (max-width: 1024px) {
   section .boxing .box_magic:nth-child(even) {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }
 
@@ -1076,6 +1079,12 @@ section .boxing .box_magic:nth-child(even) .text_box {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: text;
+}
+
+@media screen and (max-width: 1024px) {
+  section .boxing .box_magic:nth-child(even) .text_box {
+    padding: 0 100px;
+  }
 }
 
 .btn {
