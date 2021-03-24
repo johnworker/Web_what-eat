@@ -64,6 +64,32 @@ $(".mini_box").slick({
  });
 
 // 捲動效果
+// $(function(){
+    //滑動至指定位置
+    // $(".action").click(function(event){
+    // //  event.preventDefault();
+    // /* E.preventDefault();是為了取消a的預設值 */
+    // var a = $(this).attr("href");
+    // var $("#list") = $(a).offset();/*自己命名的名稱 */
+    // $("html,body").animate({scrollTop:$('#list').offset().top},1000);
+    // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 使用者滑鼠滾動時 停止所有動畫
 $("html").on("mousewheel", function () {

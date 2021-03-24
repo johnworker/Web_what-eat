@@ -70,7 +70,7 @@ nav {
         padding: 0 60px;
         vertical-align: 10px;
         color: $color-black;
-        height: 300px;
+        // height: 300px;
 
         // 滑入後 顯示 裡面的 子分頁元素
         &:hover .sub-link{
@@ -154,6 +154,10 @@ nav {
     font-size: 36px !important;
     font-family: 'Coda Caption', sans-serif;
     letter-spacing: 3px;
+
+    @media screen and (max-width: $tablet) {
+        display: block !important;
+    }
 
 
     &:hover {
@@ -492,6 +496,10 @@ nav {
 }
 
 // 聯絡LEO
+#list {
+    padding: 100px 0 0;
+}
+
 form {
     width: 1280px;
     margin: 0 auto;
@@ -586,6 +594,22 @@ main {
         margin: 250px 500px 100px;
         animation: title-word 1s 1s;
         animation-fill-mode: backwards;
+
+        @media screen and (max-width: $tablet) {
+            margin: 250px 400px 100px;
+            font-size: 80px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: $tablets) {
+            margin: 250px 300px 100px;
+            font-size: 70px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            margin: 250px 150px 100px;
+            font-size: 60px;
+        }
     }
 
     @keyframes title-word {
@@ -603,6 +627,9 @@ main {
         display: block;
         margin: 0 auto;
         
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
     }
 
     h3 {
@@ -611,6 +638,15 @@ main {
         font-weight: bold;
         letter-spacing: 5px;
         font-size: 40px;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 60px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 50px;
+        }
+        
     }
 
     p {
@@ -619,6 +655,15 @@ main {
         padding: 5px;
         line-height: 2;
         font-size: 20px;
+
+        @media screen and (max-width: $tablet) {
+            width: 70%;
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 24px;
+        }
     }
 }
 
@@ -627,6 +672,10 @@ section {
     width: 1280px;
     height: 100%;
     margin: 100px auto;
+
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+    }
 
     .boxing {
         width: 100%;
@@ -638,12 +687,20 @@ section {
             grid-template-columns: 60% 40%;
             grid-gap: 80px;
             margin-bottom: 100px;
+
+            @media screen and (max-width: $tablet) {
+                grid-template-columns: none;
+                display: block;
+            }
         }
     
         .image_box {
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
             display: block;
+            width: 100%;
+
+            
         }
         
         img {
@@ -651,12 +708,21 @@ section {
             height: 600px;
             object-fit: cover;
             margin: 0 100px;
+
+            @media screen and (max-width: $tablet) {
+                margin: 0 290px;
+            }
         }
 
         .text_box {
             margin: 0;
             padding-right: 30%;
             display: block;
+            width: 100%;
+            
+            @media screen and (max-width: $tablet) {
+               padding: none !important;
+            }
         }
 
         h4 {
@@ -664,18 +730,33 @@ section {
             padding: 20px 10px 10px;
             font-size: 32px;
             font-weight: bold;
+
+            @media screen and (max-width: $tablet) {
+                font-size: 40px;
+                
+            }
         }
 
         p{
             font-size: 20px;
             padding: 10px 0;
             line-height: 2.5;
+
+            @media screen and (max-width: $tablet) {
+                width: 100%;
+                font-size: 30px;
+
+            }
         }
 
 
         .box_magic:nth-child(odd) {
             grid-template-areas: "pic text";
             grid-template-columns: 60% 40%;
+
+            @media screen and (max-width: $tablet) {
+                grid-template-columns: 1fr;
+            }
         }
         .box_magic:nth-child(odd) .image_box {
             grid-area: pic;
@@ -688,6 +769,10 @@ section {
             grid-template-areas: "text pic";
             grid-template-columns: 40% 60%;
             margin-left: 10%;
+
+            @media screen and (max-width: $tablet) {
+                grid-template-columns: 1fr;
+            }
         }
 
         .box_magic:nth-child(even) .image_box {
@@ -739,6 +824,18 @@ section {
     animation: title-new-word 1s 1s;
     animation-fill-mode: backwards;
 
+    @media screen and (max-width: $tablet) {
+        font-size: 70px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        font-size: 64px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        font-size: 36px;
+    }
+
     @keyframes title-new-word {
         0% {
             transform: translateX(-1000px);
@@ -755,6 +852,10 @@ section {
     height: 800px;
     margin: 0 auto;
     // margin: 250px 260px;
+
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+    }
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -763,6 +864,28 @@ section {
 
 // game頁面 
 // 圖片更換
-.slider-item:nth-of-type(3) {
-    background-image: url(https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)!important;
-  }
+#games {
+    width: 100%;
+    height: 100vh;
+
+    .flip-card-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .slider-item:nth-of-type(1) {
+        background-image: url(./img/game1.jpg)!important;
+        // opacity: 0.5;
+      }
+    
+    .slider-item:nth-of-type(2) {
+        background-image: url(./img/game2.jpg)!important;
+        // opacity: 0.5;
+      }
+    
+    .slider-item:nth-of-type(3) {
+        background-image: url(./img/game3.jpg)!important;
+        // opacity: 0.5;
+      }
+    
+}
