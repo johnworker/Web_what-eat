@@ -2,124 +2,195 @@
 <html lang="zh">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>吃什麼網站 | 介紹</title>
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- slick CDN -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <!-- bootstrap CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>吃什麼網站 | 介紹</title>
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- slick CDN -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- 導覽列 -->
-    <nav data-aos="fade" data-aos-delay="500" data-aos-duration="3000">
-        <div id="menu"></div>
-        <div></div>
-        <div id="link">
-            <div id="link-work" href="">
-                美食簡介
-                <ul class="sub-link">
-                    <li>
-                        <a href="./rice.html">飯類</a>
-                    </li>
-                    <li>
-                        <a href="./noodles.html">麵類</a>
-                    </li>
-                    <li>
-                        <a href="./snack.html">點心</a>
-                    </li>
-                    <li>
-                        <a href="./dessert.html">甜點</a>
-                    </li>
-                </ul>
-            </div>
+  <!-- 導覽列 -->
+  <nav data-aos="fade" data-aos-delay="500" data-aos-duration="3000">
+    <div id="menu">
+      <div class="mini-link-box">
+        <ul class="mini-link">
+          <li>
+            <a href="./index.html" class="mini-logo">{LEO}</a>
+          </li>
+          <li>
+            <a class="link-mini-work" href="">
+              美食簡介
+            </a>
+          </li>
+          <li>
             <a href="./recommend.html">美食推薦</a>
-            <a href="./index.html" class="logo">{LEO}</a>
+          </li>
+          <li>
             <a href="./game.html">遊戲模式</a>
+          </li>
+          <li>
             <a href="./contact.html" data-st-target="list" data-st-duration="1000" data-st-offset="100">聯絡方式</a>
-        </div>
-        <div id="social">
-            <a href="https://www.youtube.com/results?search_query=eat+what" target="blank"><img src="./img/youtube.png"
-                    alt=""></a>
-            <a href=""><img src="./img/instagram.png" alt=""></a>
-            <a href=""><img src="./img/facebook.png" alt=""></a>
-            <a href=""><img src="./img/github.png" alt=""></a>
-        </div>
-    </nav>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div></div>
+    <div id="link">
+      <div id="link-work" href="">
+        美食簡介
+        <ul class="sub-link">
+          <li>
+            <a href="./rice.html">飯類</a>
+          </li>
+          <li>
+            <a href="./noodles.html">麵類</a>
+          </li>
+          <li>
+            <a href="./snack.html">點心</a>
+          </li>
+          <li>
+            <a href="./dessert.html">甜點</a>
+          </li>
+        </ul>
+      </div>
+      <a href="./recommend.html">美食推薦</a>
+      <a href="./index.html" class="logo">{LEO}</a>
+      <a href="./game.html">遊戲模式</a>
+      <a href="./contact.html" data-st-target="list" data-st-duration="1000" data-st-offset="100">聯絡方式</a>
+    </div>
+    <div id="social">
+      <a href="https://www.youtube.com/results?search_query=eat+what" target="blank"><img src="./img/youtube.png"
+          alt=""></a>
+      <a href=""><img src="./img/instagram.png" alt=""></a>
+      <a href=""><img src="./img/facebook.png" alt=""></a>
+      <a href=""><img src="./img/github.png" alt=""></a>
+    </div>
+  </nav>
 
-    <section>
-        <h2 class="title-new-word">美食推薦</h2>
-        
-        <!-- 輪播 -->
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/meal1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/meal2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/meal3.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/meal4.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/meal5.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/meal6.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>          
-    </section>
+  <section>
+    <h2 class="title-new-word">美食推薦</h2>
 
-    <!-- 頁尾 -->
-    <footer>
-        <div>
-            <a href="" class="logo">{LEO}</a>
+    <!-- 輪播 -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/meal1.jpg" class="d-block w-100" alt="...">
         </div>
-        <small id="copy">
-            &copy; LEO 2021.
-        </small>
-        <div id="link">
-            <a href="">美食簡介</a>
-            <a href="">美食推薦</a>
-            <a href="">遊戲模式</a>
-            <a href="">聯絡方式</a>
+        <div class="carousel-item">
+          <img src="./img/meal2.jpg" class="d-block w-100" alt="...">
         </div>
-    </footer>
+        <div class="carousel-item">
+          <img src="./img/meal3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/meal4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/meal5.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/meal6.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
 
-    <!-- AOS CDN -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- slick CDN -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+   <!-- 卡片推薦美食區 -->
+  <section id="">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="..." alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 頁尾 -->
+  <footer>
+    <div>
+      <a href="" class="logo">{LEO}</a>
+    </div>
+    <small id="copy">
+      &copy; LEO 2021.
+    </small>
+    <div id="link">
+      <a href="">美食簡介</a>
+      <a href="">美食推薦</a>
+      <a href="">遊戲模式</a>
+      <a href="">聯絡方式</a>
+    </div>
+  </footer>
+
+  <!-- AOS CDN -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- slick CDN -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- bootstrap CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>

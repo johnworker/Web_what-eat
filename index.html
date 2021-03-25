@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>吃什麼網站</title>
-     <!-- AOS -->
+    <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- slick CDN -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- bootstrap CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-   
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="./style.css">
 
     <!-- . 跟此檔案相同資料夾內的其他檔案 -->
@@ -23,8 +24,31 @@
 
 <body>
     <!-- 導覽列 -->
-    <nav data-aos="fade"  data-aos-delay="500" data-aos-duration="3000">
-        <div id="menu"></div>
+    <nav data-aos="fade" data-aos-delay="500" data-aos-duration="3000">
+        <div id="menu">
+            <div class="mini-link-box">
+                <ul class="mini-link">
+                    <li>
+                        <a href="./index.html" class="mini-logo">{LEO}</a>
+                    </li>
+                    <li>
+                        <a class="link-mini-work" href="">
+                            美食簡介
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./recommend.html">美食推薦</a>
+                    </li>
+                    <li>
+                        <a href="./game.html">遊戲模式</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" data-st-target="list" data-st-duration="1000"
+                            data-st-offset="100">聯絡方式</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div></div>
         <div id="link">
             <div id="link-work" href="">
@@ -50,9 +74,11 @@
             <a href="./contact.html" data-st-target="list" data-st-duration="1000" data-st-offset="100">聯絡方式</a>
         </div>
         <div id="social">
-            <a href="https://www.youtube.com/results?search_query=eat+what" target="blank"><img src="./img/youtube.png" alt=""></a>
+            <a href="https://www.youtube.com/results?search_query=eat+what" target="blank"><img src="./img/youtube.png"
+                    alt=""></a>
             <a href="https://www.instagram.com/besscomha" target="blank"><img src="./img/instagram.png" alt=""></a>
-            <a href="http://m.facebook.com/yanjun.liao.50?ref=bookmarks" target="blank"><img src="./img/facebook.png" alt=""></a>
+            <a href="http://m.facebook.com/yanjun.liao.50?ref=bookmarks" target="blank"><img src="./img/facebook.png"
+                    alt=""></a>
             <a href="https://github.com/" target="blank"><img src="./img/github.png" alt=""></a>
         </div>
     </nav>
@@ -67,12 +93,14 @@
         </div>
         <div class="banner2">
             <h2 data-aos="fade-up" data-aos-duration="1000">點心</h2>
-            <h3 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">原料包括麵粉、牛奶、牛油、沙糖、奶油、巧克力、生果、果仁等，輔助以各種食品添加劑，<br>
+            <h3 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                原料包括麵粉、牛奶、牛油、沙糖、奶油、巧克力、生果、果仁等，輔助以各種食品添加劑，<br>
                 並以焗爐高溫烘製為主，或以特定的工藝製成。</h3>
         </div>
         <div class="banner3">
             <h2 data-aos="fade-up" data-aos-duration="1000">牛排</h2>
-            <h3 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">清末小說中已出現「牛排」、「豬排」等西菜菜名，可能是因形似上海「大排」（豬丁骨），故名「排」。<br>
+            <h3 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                清末小說中已出現「牛排」、「豬排」等西菜菜名，可能是因形似上海「大排」（豬丁骨），故名「排」。<br>
                 而英語中表示牛排的「steak」一詞則源自古諾爾斯語詞「steik」，後者意即烤牛肉。</h3>
         </div>
     </div>
@@ -83,8 +111,8 @@
         <div class="big_box">
             <h2>設計概念</h2>
             <p>進食是不僅是生活中一個重要的部分，也是人重要的社交行為，人的食材準備與食物消費，在人群社會中扮演著重要的角色。<br>
-            俗話說「民以食為天」便是這個道理的最佳概括。<br>
-            我們透過遊戲互動方式的APP或網頁小遊戲，讓使用者尋找美食的過程輕鬆愉快，同時也體驗到遊戲樂趣，尋找美食又可以有遊戲體驗，使得找美食不無聊、不孤單。</p>
+                俗話說「民以食為天」便是這個道理的最佳概括。<br>
+                我們透過遊戲互動方式的APP或網頁小遊戲，讓使用者尋找美食的過程輕鬆愉快，同時也體驗到遊戲樂趣，尋找美食又可以有遊戲體驗，使得找美食不無聊、不孤單。</p>
 
             <div class="mini_box">
                 <div class="mini-card">
@@ -188,7 +216,7 @@
         </div>
     </div>
 
-    
+
     <!-- 頁尾 -->
     <footer>
         <div>
@@ -209,7 +237,7 @@
     <!-- data-st-time 特效的持續時間 -->
     <a id="arrow" data-st-target="top" data-st-duration="800" data-st-top="300" data-st-time="1000"></a>
 
-    
+
     <!-- AOS CDN -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -219,7 +247,9 @@
     <!-- slick CDN -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
 

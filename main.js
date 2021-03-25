@@ -117,3 +117,5 @@ $(window).scroll(function () {
     //否則就淡出
     else arrow.stop().fadeOut(arrowTimeInt)
  });
+
+ 

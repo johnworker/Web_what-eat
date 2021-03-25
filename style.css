@@ -37,6 +37,53 @@ body {
   }
 }
 
+#menu .mini-link-box {
+  position: relative;
+  display: inline-block;
+  padding: 0 60px;
+  vertical-align: 10px;
+  color: #252525;
+  height: 50px;
+  right: 80px;
+  top: 0px;
+}
+
+#menu .mini-link-box:hover .mini-link {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#menu .mini-link-box .mini-link {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  position: absolute;
+  list-style-type: none;
+  top: 56px;
+  left: 4px;
+  background: rgba(236, 236, 236, 0.9);
+}
+
+#menu .mini-link-box .mini-link .mini-logo {
+  font-weight: 900;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+  font-size: 22px !important;
+  font-family: 'Coda Caption', sans-serif;
+  letter-spacing: 3px;
+}
+
+#menu .mini-link-box .mini-link a {
+  display: block !important;
+  padding: 20px 50px !important;
+  width: 180px !important;
+  color: #252525;
+  font-size: 20px;
+}
+
 nav {
   display: -ms-grid;
   display: grid;
