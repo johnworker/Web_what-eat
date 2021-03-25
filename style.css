@@ -1228,6 +1228,11 @@ section .boxing .box_magic:nth-child(even) .text_box {
   display: none;
 }
 
+.food {
+  width: 200px;
+  padding: 10px;
+}
+
 #games {
   width: 100%;
   height: 100vh;
