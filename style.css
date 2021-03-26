@@ -1228,9 +1228,39 @@ section .boxing .box_magic:nth-child(even) .text_box {
   display: none;
 }
 
-.food {
-  width: 200px;
-  padding: 10px;
+#delicious {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+#delicious .card {
+  width: 100%;
+}
+
+#delicious .card .row {
+  width: 1280px;
+}
+
+#delicious .card .row .food {
+  width: 400px;
+  padding: 30px;
+}
+
+#delicious .card .row .card-body {
+  position: relative;
+  width: 800px;
+  padding: 30px;
+}
+
+#delicious .card .row .card-body .card-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#delicious .card .row .card-body .card-text {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 #games {

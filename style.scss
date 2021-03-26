@@ -915,9 +915,39 @@ section {
     display: none;
 }
 
-.food {
-    width: 200px;
-    padding: 10px;
+#delicious{
+    width: 1280px;
+    margin: 0 auto;
+
+    .card {
+       width: 100%;
+
+       .row {
+            width: 1280px;
+
+            .food {
+                width: 400px;
+                padding: 30px;
+            }
+
+            .card-body {
+                position: relative;
+                width: 800px;
+                padding: 30px;
+
+                .card-title {
+                    font-size: 36px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+
+                .card-text {
+                    font-size: 18px;
+                    line-height: 1.7;
+                }
+            }
+        }
+    }
 }
 
 // game頁面 
