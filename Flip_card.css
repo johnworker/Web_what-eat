@@ -33,6 +33,7 @@
 .flip:hover > .back {
   opacity: 1;
   transform: rotateY(0deg);
+  background-image: url(./img/food_draw.png);
 }
 /* .flip.flip-vertical > .back { */
   /* transform: rotateX(-180deg); */
@@ -47,18 +48,18 @@
 .flip {
   position: relative;
   display: inline-block;
-  margin-right: 2px;
+  margin-right: 50px;
   margin-bottom: 1em;
-  width: 400px;
+  width: 220px;
 }
 .flip > .front,
 .flip > .back {
   display: block;
-  color: white;
+  color: black;
   width: inherit;
   background-size: cover !important;
   background-position: center !important;
-  height: 220px;
+  height: 300px;
   padding: 1em 2em;
   border-radius: 10px;
 }

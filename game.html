@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="https://johnworker.github.io/Web_javascript_slide/style.css">
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./dice.css">
     <link rel="stylesheet" href="/Flip_card.css">
+    
 </head>
 
 <body>
@@ -30,9 +32,23 @@
                         <a href="./index.html" class="mini-logo">{LEO}</a>
                     </li>
                     <li>
-                        <a class="link-mini-work" href="">
+                        <div class="link-mini-work" href="">
                             美食簡介
-                        </a>
+                            <ul class="sub-mini-link">
+                                <li>
+                                    <a href="./rice.html">飯類</a>
+                                </li>
+                                <li>
+                                    <a href="./noodles.html">麵類</a>
+                                </li>
+                                <li>
+                                    <a href="./snack.html">點心</a>
+                                </li>
+                                <li>
+                                    <a href="./dessert.html">甜點</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <a href="./recommend.html">美食推薦</a>
@@ -81,13 +97,53 @@
         </div>
     </nav>
 
-    <section id="games">
+    <section class="games">
         <!-- 輪播圖大盒子 -->
         <!-- 寫法：#slider-box>(.slider-item>h1)*3 -->
-        <div id="slider-box" data-s-interval="5000" data-s-showdots="true">
+        <div id="slider-box" data-s-interval="20000" data-s-showdots="true">
             <!-- 輪播圖內的項目，圖片與內容 -->
             <div class="slider-item slider-active">
                 <h1>骰子</h1>
+                <h4>請點擊骰子使它滾動</h4>
+                <div class="dice">
+                    <section class="container">
+                        <div id="cube">
+                          <div class="front">
+                            <span class="dot dot1"></span>
+                          </div>
+                          <div class="back">
+                            <span class="dot dot1"></span>
+                            <span class="dot dot2"></span>
+                          </div>
+                          <div class="right">
+                            <span class="dot dot1"></span>
+                            <span class="dot dot2"></span>  
+                            <span class="dot dot3"></span>
+                          </div>
+                          <div class="left">
+                            <span class="dot dot1"></span>
+                            <span class="dot dot2"></span>  
+                            <span class="dot dot3"></span>
+                            <span class="dot dot4"></span>
+                          </div>
+                          <div class="top">
+                            <span class="dot dot1"></span>
+                            <span class="dot dot2"></span>  
+                            <span class="dot dot3"></span>
+                            <span class="dot dot4"></span>
+                            <span class="dot dot5"></span>
+                          </div>
+                          <div class="bottom">
+                            <span class="dot dot1"></span>
+                            <span class="dot dot2"></span>  
+                            <span class="dot dot3"></span>
+                            <span class="dot dot4"></span>
+                            <span class="dot dot5"></span>
+                            <span class="dot dot6"></span>
+                          </div>
+                        </div>
+                      </section>
+                </div>
             </div>
             <div class="slider-item">
                 <h1>翻牌</h1>
@@ -96,33 +152,24 @@
 
                     <!-- <h4>Horizontal Flip</h4> -->
                     <div class="flip">
-                        <div class="front"
-                            style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                        <div class="front" style="background-image: url(./img/one_card.png)">
                         </div>
-                        <div class="back">
-                            <h2>Angular</h2>
-                            <p>Good tools make application development quicker and easier to maintain than if you did
-                                everything by hand..</p>
+                        <div class="back"  style="background-image: url(./img/food_draw.png);">
+                            <h2>蛋包飯</h2>
                         </div>
                     </div>
                     <div class="flip">
-                        <div class="front"
-                            style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                        <div class="front" style="background-image: url(./img/one_card.png)">
                         </div>
-                        <div class="back">
-                            <h2>Angular</h2>
-                            <p>Good tools make application development quicker and easier to maintain than if you did
-                                everything by hand..</p>
+                        <div class="back" style="background-image: url(./img/food_draw2.png);">
+                            <h2>炒麵</h2>
                         </div>
                     </div>
                     <div class="flip">
-                        <div class="front"
-                            style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                        <div class="front" style="background-image: url(./img/one_card.png)">
                         </div>
-                        <div class="back">
-                            <h2>Angular</h2>
-                            <p>Good tools make application development quicker and easier to maintain than if you did
-                                everything by hand..</p>
+                        <div class="back" style="background-image: url(./img/food_draw3.png);">
+                            <h2>牛排</h2>
                         </div>
                     </div>
 
@@ -131,25 +178,29 @@
 
             <div class="slider-item">
                 <h1>抽牌</h1>
+                <div class="draw_box">
+                    <img class="deck" src="./img/deck.png" alt="">
+                    <img class="draw" src="./img/food_draw.png" alt="">
+                </div>
             </div>
 
-       
-        
-        
-        
-        <!-- 上一張與下一張按鈕 -->
-        <div id="slider-prev"></div>
-        <div id="slider-next"></div>
-        <!-- 點點 -->
-        <!-- 寫法：#slider-dots>(span.slider-dots)*3 -->
-        <div id="slider-dots">
-            <span class="slider-dot slider-dot-active"></span>
-            <span class="slider-dot"></span>
-            <span class="slider-dot"></span>
+
+
+
+
+            <!-- 上一張與下一張按鈕 -->
+            <div id="slider-prev"></div>
+            <div id="slider-next"></div>
+            <!-- 點點 -->
+            <!-- 寫法：#slider-dots>(span.slider-dots)*3 -->
+            <div id="slider-dots">
+                <span class="slider-dot slider-dot-active"></span>
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
+
+            </div>
 
         </div>
-
-    </div>
 
     </section>
 
