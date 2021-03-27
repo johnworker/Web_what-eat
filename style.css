@@ -1268,9 +1268,9 @@ section .boxing .box_magic:nth-child(even) .text_box {
   height: 100vh;
 }
 
-#games .flip-card-container {
-  width: 80%;
-  margin: 0 auto;
+#games #good_box {
+  position: relative;
+  bottom: 100px;
 }
 
 #games .slider-item:nth-of-type(1) {
