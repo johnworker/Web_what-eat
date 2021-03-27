@@ -1,18 +1,96 @@
 /* 桌電：大於等於 1025 px */
 @media screen and (min-width: 1025px) {
-    #test::after {
-      content: "桌電";
+  #slider-box h4 {
+      font-size: 50px;
+      letter-spacing: 5px;
+      left: 35%;
     }
   }
-  /* 平板：小於等於 1024 px */
+  /* Pro平板：小於等於 1024 px */
   @media screen and (max-width: 1024px) {
-    #test::after {
-      content: "平板";
+    /* 骰子 */
+    #slider-box h4 {
+      font-size: 50px;
+      letter-spacing: 5px;
+      left: 30%;
+      bottom: 900px;
+    }
+
+    #cube {
+      top: 400px;
+      position: absolute;
+    }
+    /* 翻牌 */
+    #good_box {
+      bottom: 0;
+      top: 150px;
+      left: 25px;
     }
   }
+
+  /* 平板：小於等於 960 px */
+@media screen and (max-width: 960px) {
+  #slider-box h4 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    left: 22%;
+    bottom: 570px;
+  }
+  #cube {
+    top: 300px;
+    position: absolute;
+  }
+
+  /* 翻牌 */
+  #good_box {
+    bottom: 0;
+    top: -30px;
+    left: 18px;
+  }
+
+  .flip {
+    margin-right: 30px;
+    margin-bottom: 1em;
+    width: 200px;
+  }
+
+  .flip > .front,
+  .flip > .back {
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 275px;
+    padding: 1em 2em;
+    border-radius: 10px;
+  }
+}
   /* 手機：小於等於 767 px */
   @media screen and (max-width: 767px) {
-    #test::after {
-      content: "手機";
+    #slider-box h4 {
+      font-size: 24px;
+      letter-spacing: 5px;
+      left: 16%;
+      bottom: 500px;
+    }
+    #cube {
+      top: 150px;
+      right: 5px;
+      position: absolute;
     }
     
+  /* 翻牌 */
+    #good_box {
+      bottom: 0;
+      top: -100px;
+      left: 16px;
+    }
+
+    .flip:nth-child(2) {
+      opacity: 0;
+    }
+
+    .flip:nth-child(3) {
+      opacity: 0;
+    }
+    
+  }  

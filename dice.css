@@ -4,8 +4,10 @@
     bottom: 480px;
     font-weight: bold;
     font-size: 35px;
-    left: 41%;
+    left: 40%;
     position: absolute;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
   }
   
 #cube .front {
