@@ -1,0 +1,18 @@
+/* 桌電：大於等於 1025 px */
+@media screen and (min-width: 1025px) {
+    #test::after {
+      content: "桌電";
+    }
+  }
+  /* 平板：小於等於 1024 px */
+  @media screen and (max-width: 1024px) {
+    #test::after {
+      content: "平板";
+    }
+  }
+  /* 手機：小於等於 767 px */
+  @media screen and (max-width: 767px) {
+    #test::after {
+      content: "手機";
+    }
+    
