@@ -96,7 +96,7 @@ nav {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   position: fixed;
-  z-index: 3;
+  z-index: 6;
   width: 100%;
   height: 110px;
   top: 0;
@@ -1317,6 +1317,56 @@ section .boxing .box_magic:nth-child(even) .text_box {
 #delicious .card .row .food {
   width: 400px;
   padding: 30px;
+  -webkit-animation: unfold 1s 1s;
+          animation: unfold 1s 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes unfold {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0.1;
+  }
+  75% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes unfold {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0.1;
+  }
+  75% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1424,28 +1474,100 @@ section .boxing .box_magic:nth-child(even) .text_box {
 .games .draw_box .deck {
   position: absolute;
   display: block;
-  bottom: 100px;
-  width: 200px;
-  left: 45%;
+  bottom: 50px;
+  width: 275px;
+  left: 40%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .games .draw_box .deck {
+    bottom: -200px;
+    width: 350px;
+    left: 36%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .games .draw_box .deck {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .games .draw_box .deck {
+    width: 200px;
+    left: 24%;
+    bottom: 5px;
+  }
 }
 
 .games .draw_box .draw {
   position: absolute;
   display: block;
-  bottom: 100px;
-  width: 150px;
-  left: 47%;
+  top: -90px;
+  width: 220px;
+  left: 42%;
   margin: 0 auto;
   -webkit-transition: 2s;
   transition: 2s;
   opacity: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .games .draw_box .draw {
+    width: 280px;
+    top: 70px;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .games .draw_box .draw {
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .games .draw_box .draw {
+    width: 150px;
+    left: 30%;
+    bottom: 5px;
+  }
+}
+
 .games .draw_box .draw:hover {
   -webkit-transform: translateY(-230px);
           transform: translateY(-230px);
   opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .games .draw_box .draw:hover {
+    -webkit-transform: translateY(-350px);
+            transform: translateY(-350px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .games .draw_box .draw:hover {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .games .slider_box {
+    height: 100% !important;
+    overflow-y: hidden !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .games .slider_box .slider-item {
+    height: 100% !important;
+    overflow-y: hidden !important;
+  }
 }
 
 .games .slider-item:nth-of-type(1) {
