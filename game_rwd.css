@@ -1,9 +1,17 @@
+/* 大型桌電：大於等於 1280 px */
+@media screen and (min-width: 1280px) {
+  #slider-box h4 {
+      left: 38%;
+      top: 230px;
+    }
+  }
 /* 桌電：大於等於 1025 px */
 @media screen and (min-width: 1025px) {
   #slider-box h4 {
       font-size: 50px;
       letter-spacing: 5px;
-      left: 36%;
+      /* left: 36%; */
+      top: 230px;
     }
   }
   /* Pro平板：小於等於 1024 px */
@@ -12,8 +20,8 @@
     #slider-box h4 {
       font-size: 50px;
       letter-spacing: 5px;
+      top: 400px;
       left: 30%;
-      bottom: 900px;
     }
 
     #cube {
@@ -34,7 +42,7 @@
     font-size: 50px;
     letter-spacing: 5px;
     left: 22%;
-    bottom: 570px;
+    top: 400px;
   }
   #cube {
     top: 300px;
@@ -70,7 +78,7 @@
       font-size: 24px;
       letter-spacing: 5px;
       left: 16%;
-      bottom: 500px;
+      top: 300px;
     }
     #cube {
       top: 150px;

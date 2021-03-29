@@ -1215,6 +1215,15 @@ section .boxing .box_magic:nth-child(even) .text_box {
   color: #252525;
 }
 
+.btn a {
+  text-decoration: none;
+  color: #e9e9e9;
+}
+
+.btn a:hover {
+  color: #252525;
+}
+
 .title-big, .title-new-word {
   text-align: center;
   padding: 10px 0 30px;
