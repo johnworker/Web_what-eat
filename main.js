@@ -63,6 +63,10 @@ $(".mini_box").slick({
     pause: false
  });
 
+ $("#slider-box").carousel({
+     pause: true
+ });
+
 // 捲動效果
 // $(function(){
     //滑動至指定位置

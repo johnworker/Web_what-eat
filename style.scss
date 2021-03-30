@@ -274,9 +274,24 @@ nav {
             height: 100vh;
             text-align: center;
             color: $color-white;
+            position: relative;
 
             @media screen and (max-width: $tablet) {
                 background-size: cover;
+            }
+
+            @for $i from 1 through 3{
+                .banner#{$i}::before{    
+                    content:'';
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    height:100vh;
+                    background-image: url(./img/banner#{$i}.jpg);
+                    filter:blur(5px);
+                    z-index: 5;
+                    background-size:cover;
+                }
             }
 
             &:focus {
@@ -287,7 +302,8 @@ nav {
                 padding: 300px 0 100px;
                 font-size: 60px;
                 font-weight: bold;
-                text-shadow: $text-shadow;   
+                text-shadow: $text-shadow;
+                   
 
                 @media screen and (max-width: $tablet) {
                     padding: 600px 0 50px;
@@ -332,6 +348,22 @@ nav {
             }
         }
     }
+
+    // @for $i from 1 through 3{
+
+            // .banner#{$i}::before{    
+                // content:'';
+                // position:absolute;
+                // top:0;
+                // left:0;
+                // height:100vh;
+                // background-image: url(./img/banner#{$i}.jpg);
+                // filter:blur(5px);
+                // z-index:-1;
+                // background-size:cover;
+            // }
+
+        // }
 }
 // 關於
 #about {
