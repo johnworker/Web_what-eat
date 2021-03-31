@@ -1620,6 +1620,7 @@ section .boxing .box_magic:nth-child(even) .text_box {
 @media screen and (max-width: 960px) {
   .games .draw_box .deck {
     left: 30%;
+    bottom: -100px;
   }
 }
 
@@ -1627,7 +1628,7 @@ section .boxing .box_magic:nth-child(even) .text_box {
   .games .draw_box .deck {
     width: 200px;
     left: 24%;
-    bottom: 5px;
+    bottom: 20px;
   }
 }
 
@@ -1654,6 +1655,7 @@ section .boxing .box_magic:nth-child(even) .text_box {
 @media screen and (max-width: 960px) {
   .games .draw_box .draw {
     left: 35%;
+    top: -25px;
   }
 }
 
@@ -1661,13 +1663,13 @@ section .boxing .box_magic:nth-child(even) .text_box {
   .games .draw_box .draw {
     width: 150px;
     left: 30%;
-    bottom: 5px;
+    top: 50px;
   }
 }
 
 .games .draw_box .draw:hover {
-  -webkit-transform: translateY(-230px);
-          transform: translateY(-230px);
+  -webkit-transform: translateY(-250px);
+          transform: translateY(-250px);
   opacity: 1;
 }
 

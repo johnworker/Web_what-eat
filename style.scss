@@ -1140,12 +1140,13 @@ section {
 
             @media screen and (max-width: $tablets) {
                 left: 30%;
+                bottom: -100px;
             }
 
             @media screen and (max-width: $mobile) {
                 width: 200px;
                 left: 24%;
-                bottom: 5px;
+                bottom: 20px;
             }
         }
 
@@ -1167,17 +1168,18 @@ section {
 
             @media screen and (max-width: $tablets) {
                 left: 35%;
+                top: -25px;
             }
 
             @media screen and (max-width: $mobile) {
                 width: 150px;
                 left: 30%;
-                bottom: 5px;
+                top: 50px;
             }
 
 
             &:hover {
-                transform: translateY(-230px);
+                transform: translateY(-250px);
                 opacity: 1;
 
                 @media screen and (max-width: $tablet) {
