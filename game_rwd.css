@@ -1,13 +1,13 @@
 /* 大型桌電：大於等於 1280 px */
 @media screen and (min-width: 1280px) {
-  #slider-box h4 {
+  .carousel-inner h4 {
       left: 38%;
       top: 230px;
     }
   }
 /* 桌電：大於等於 1025 px */
 @media screen and (min-width: 1025px) {
-  #slider-box h4 {
+  .carousel-inner h4 {
       font-size: 50px;
       letter-spacing: 5px;
       /* left: 36%; */
@@ -17,7 +17,7 @@
   /* Pro平板：小於等於 1024 px */
   @media screen and (max-width: 1024px) {
     /* 骰子 */
-    #slider-box h4 {
+    .carousel-inner h4 {
       font-size: 50px;
       letter-spacing: 5px;
       top: 400px;
@@ -38,14 +38,14 @@
 
   /* 平板：小於等於 960 px */
 @media screen and (max-width: 960px) {
-  #slider-box h4 {
+  .carousel-inner h4 {
     font-size: 50px;
     letter-spacing: 5px;
     left: 22%;
     top: 300px;
   }
   #cube {
-    top: 200px;
+    top: 250px;
     position: absolute;
   }
 
@@ -74,7 +74,7 @@
 }
   /* 手機：小於等於 767 px */
   @media screen and (max-width: 767px) {
-    #slider-box h4 {
+    .carousel-inner h4 {
       font-size: 24px;
       letter-spacing: 5px;
       left: 16%;
@@ -82,7 +82,7 @@
     }
     #cube {
       top: 150px;
-      right: 5px;
+      right: 0;
       position: absolute;
     }
     

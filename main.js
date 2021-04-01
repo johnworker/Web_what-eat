@@ -6,7 +6,7 @@ $("#banner").slick({
 
 $("#work").slick({
     slidesToShow: 4,
-    slidesToScroll: 1, 
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     // 響應式 RWD
@@ -32,7 +32,7 @@ $("#work").slick({
 
 $(".mini_box").slick({
     slidesToShow: 4,
-    slidesToScroll: 1, 
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
     pause: false,
@@ -58,39 +58,28 @@ $(".mini_box").slick({
 });
 
 // bootstrap 輪播(淡入淡出)
- $("#carouselExampleFade").carousel({
+$("#carouselExampleFade").carousel({
     interval: 3000,
     pause: false
- });
+});
 
-
- 
 // 捲動效果
-// $(function(){
-    //滑動至指定位置
-    // $(".action").click(function(event){
-    // //  event.preventDefault();
-    // /* E.preventDefault();是為了取消a的預設值 */
-    // var a = $(this).attr("href");
-    // var $("#list") = $(a).offset();/*自己命名的名稱 */
-    // $("html,body").animate({scrollTop:$('#list').offset().top},1000);
+$(function () {
+    //捲動至top0的位置
+    $("#arrow").click(function () {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    //指定捲軸位置淡出淡入
+    // $(window).scroll(function () {
+        // if ($(this).scrollTop() > 200) {
+            // $('#gotop').stop().fadeTo('fast', 1);
+        // } else {
+            // $('#gotop').stop().fadeOut('fast');
+        // }
     // });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 
 // 使用者滑鼠滾動時 停止所有動畫
@@ -102,23 +91,23 @@ var arrow = $("#arrow")
 arrow.fadeOut();
 
 // 箭頭顯示與隱藏效果
-$(window).scroll(function () { 
+$(window).scroll(function () {
     var windowTop = $(this).scrollTop();
     // console.log("視窗的上方:" + windowTop)
- 
+
     var arrowTop = arrow.attr("data-st-top");
     var arrowTime = arrow.attr("data-st-time");
     var arrowTimeInt = parseInt(arrowTime); //將時間轉為數字(整數)
- 
+
     //console.log(arrowTop)
     //console.log(arrowTime)
- 
- 
+
+
     //如果 視窗位置 大於等於 箭頭上方 就 淡入
-    if(windowTop >= arrowTop) arrow.stop().fadeIn(arrowTimeInt);
+    if (windowTop >= arrowTop) arrow.stop().fadeIn(arrowTimeInt);
     //否則就淡出
     else arrow.stop().fadeOut(arrowTimeInt)
- });
+});
 
 //  骰子
 var cube = document.getElementById('cube');
@@ -126,14 +115,14 @@ var cube = document.getElementById('cube');
 var min = 1;
 var max = 24;
 
-cube.onclick = function() {
-  var xRand = getRandom(max, min);
-  var yRand = getRandom(max, min);
-    
-  cube.style.webkitTransform = 'rotateX('+xRand+'deg) rotateY('+yRand+'deg)';
-  cube.style.transform = 'rotateX('+xRand+'deg) rotateY('+yRand+'deg)';
+cube.onclick = function () {
+    var xRand = getRandom(max, min);
+    var yRand = getRandom(max, min);
+
+    cube.style.webkitTransform = 'rotateX(' + xRand + 'deg) rotateY(' + yRand + 'deg)';
+    cube.style.transform = 'rotateX(' + xRand + 'deg) rotateY(' + yRand + 'deg)';
 }
 
 function getRandom(max, min) {
-  return (Math.floor(Math.random() * (max-min)) + min) * 90;
+    return (Math.floor(Math.random() * (max - min)) + min) * 90;
 }
