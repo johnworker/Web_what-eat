@@ -1457,56 +1457,6 @@ section .boxing .box_magic:nth-child(even) .text_box {
 #delicious .card .row .food {
   width: 400px;
   padding: 30px;
-  -webkit-animation: unfold 1s 1s;
-          animation: unfold 1s 1s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-@-webkit-keyframes unfold {
-  0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-    opacity: 0.1;
-  }
-  75% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
-    opacity: 0.4;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes unfold {
-  0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-    opacity: 0.1;
-  }
-  75% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
-    opacity: 0.4;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 @media screen and (max-width: 1024px) {
