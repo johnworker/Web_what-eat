@@ -336,7 +336,7 @@ nav #social a img {
 }
 
 #banner .banner1:nth-child(1) {
-  background-position-x: left;
+  background-position-x: 100px;
 }
 
 #banner .banner1:focus {
@@ -458,7 +458,7 @@ nav #social a img {
 }
 
 #banner .banner2:nth-child(1) {
-  background-position-x: left;
+  background-position-x: 100px;
 }
 
 #banner .banner2:focus {
@@ -580,7 +580,7 @@ nav #social a img {
 }
 
 #banner .banner3:nth-child(1) {
-  background-position-x: left;
+  background-position-x: 100px;
 }
 
 #banner .banner3:focus {
