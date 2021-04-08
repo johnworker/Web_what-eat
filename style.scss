@@ -296,10 +296,6 @@ nav {
                 }
             }
 
-            &:nth-child(1) {
-                background-position-x: 100px;
-            }
-
             &:focus {
                 outline: none;
             }
@@ -355,6 +351,18 @@ nav {
 
             }
         }
+    }
+
+    .banner1 {
+        background-position: -100px -50px;
+    }
+
+    .banner2 {
+        background-position: -120px;
+    }
+
+    .banner3 {
+        background-position: -200px -220px;
     }
 
     // @for $i from 1 through 3{

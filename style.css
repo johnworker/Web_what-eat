@@ -335,10 +335,6 @@ nav #social a img {
   background-size: cover;
 }
 
-#banner .banner1:nth-child(1) {
-  background-position-x: 100px;
-}
-
 #banner .banner1:focus {
   outline: none;
 }
@@ -455,10 +451,6 @@ nav #social a img {
           filter: blur(5px);
   z-index: 5;
   background-size: cover;
-}
-
-#banner .banner2:nth-child(1) {
-  background-position-x: 100px;
 }
 
 #banner .banner2:focus {
@@ -579,10 +571,6 @@ nav #social a img {
   background-size: cover;
 }
 
-#banner .banner3:nth-child(1) {
-  background-position-x: 100px;
-}
-
 #banner .banner3:focus {
   outline: none;
 }
@@ -646,6 +634,18 @@ nav #social a img {
     margin: 0 auto;
     line-height: 1.5;
   }
+}
+
+#banner .banner1 {
+  background-position: -100px -50px;
+}
+
+#banner .banner2 {
+  background-position: -120px;
+}
+
+#banner .banner3 {
+  background-position: -200px -220px;
 }
 
 #about {
