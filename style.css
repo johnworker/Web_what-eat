@@ -1683,7 +1683,7 @@ section .boxing .box_magic:nth-child(even) .text_box {
 .games .draw_box .draw {
   position: absolute;
   display: block;
-  top: -90px;
+  top: -110px;
   width: 220px;
   left: 42%;
   margin: 0 auto;
