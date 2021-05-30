@@ -565,6 +565,19 @@ nav {
 
         .news-card {
             box-shadow: $box-shadow;
+
+            .recipe2 {
+                position: absolute;
+                left: 0;
+                opacity: 1;
+                transition: 1s;
+
+
+                &:hover {
+                    opacity: 0;
+                }
+
+            }
         }
 
         img  {
