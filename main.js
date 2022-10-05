@@ -109,6 +109,7 @@ $(window).scroll(function () {
     else arrow.stop().fadeOut(arrowTimeInt)
 });
 
+
 //  骰子
 var cube = document.getElementById('cube');
 
