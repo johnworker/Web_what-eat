@@ -4,12 +4,13 @@
   margin: 0;
   padding: 0;
   font-family: 微軟正黑體;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   overflow-x: hidden;
-  background: rgb(229, 244, 250);
+  background: #e5f4fa;
 }
 
 #menu {
@@ -19,12 +20,14 @@ body {
   cursor: pointer;
   display: none;
 }
+
 @media screen and (max-width: 1024px) {
   #menu {
     display: block;
     margin: 0 15px 0 auto;
   }
 }
+
 @media screen and (max-width: 767px) {
   #menu {
     margin: 0 20px 0 auto;
@@ -33,6 +36,7 @@ body {
     height: 40px;
   }
 }
+
 #menu .mini-link-box {
   position: relative;
   display: inline-block;
@@ -43,26 +47,35 @@ body {
   right: 80px;
   top: 0px;
 }
+
 #menu .mini-link-box:hover .mini-link {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
+
 #menu .mini-link-box .mini-link {
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1s;
   transition: 1s;
-  transform-origin: top;
+  -webkit-transform-origin: top;
+          transform-origin: top;
   position: absolute;
   list-style-type: none;
   top: 56px;
   left: 4px;
   background: rgba(236, 236, 236, 0.9);
 }
+
 #menu .mini-link-box .mini-link .mini-logo {
   font-weight: 900;
+  -webkit-transition: 0.5s !important;
   transition: 0.5s !important;
   font-size: 22px !important;
-  font-family: "Coda Caption", sans-serif;
+  font-family: 'Coda Caption', sans-serif;
   letter-spacing: 3px;
 }
+
 #menu .mini-link-box .mini-link a {
   display: block !important;
   padding: 20px 50px !important;
@@ -72,24 +85,30 @@ body {
 }
 
 nav {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 15% auto 15%;
+  -ms-grid-columns: 15% auto 15%;
+      grid-template-columns: 15% auto 15%;
   text-align: center;
   background: rgba(236, 236, 236, 0.9);
   padding: 25px;
   color: #e9e9e9;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   position: fixed;
   z-index: 6;
   width: 100%;
   height: 110px;
   top: 0;
 }
+
 @media screen and (max-width: 1024px) {
   nav {
-    grid-template-columns: 100% 0;
+    -ms-grid-columns: 100% 0;
+        grid-template-columns: 100% 0;
   }
 }
+
 nav .link-mini-work {
   position: relative;
   display: inline-block;
@@ -99,19 +118,26 @@ nav .link-mini-work {
   font-size: 20px;
   padding: 20px 50px;
 }
+
 nav .link-mini-work:hover .sub-mini-link {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
+
 nav .sub-mini-link {
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1s;
   transition: 1s;
-  transform-origin: top;
+  -webkit-transform-origin: top;
+          transform-origin: top;
   position: absolute;
   top: 0;
   right: 190px;
   background: rgba(236, 236, 236, 0.9);
   list-style-type: none;
 }
+
 nav #link-work {
   position: relative;
   display: inline-block;
@@ -119,59 +145,79 @@ nav #link-work {
   vertical-align: 10px;
   color: #252525;
 }
+
 nav #link-work:hover .sub-link {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
+
 nav .sub-link {
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1s;
   transition: 1s;
-  transform-origin: top;
+  -webkit-transform-origin: top;
+          transform-origin: top;
   position: absolute;
   top: 56px;
   left: 4px;
   background: rgba(236, 236, 236, 0.9);
 }
+
 nav .sub-link a {
   display: block !important;
   padding: 20px 60px !important;
   width: 180px !important;
 }
+
 @media screen and (max-width: 1024px) {
   nav #link {
     display: none;
   }
 }
+
 nav #link ul {
   list-style-type: none;
 }
+
 nav #link a {
   color: #252525;
   text-decoration: none;
   font-size: 16px;
   padding: 0 30px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   display: inline-block;
   vertical-align: 10px;
 }
+
 nav #link a:hover {
   color: #999;
-  transform: scale(1.3);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
+
 nav #social {
   margin-right: 20px;
 }
+
 @media screen and (max-width: 1024px) {
   nav #social {
     display: none;
   }
 }
+
 nav #social a {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   padding: 0 10px;
 }
+
 nav #social a:hover {
-  filter: invert(43%) sepia(92%) saturate(1169%) hue-rotate(6deg) brightness(97%) contrast(101%);
+  -webkit-filter: invert(43%) sepia(92%) saturate(1169%) hue-rotate(6deg) brightness(97%) contrast(101%);
+          filter: invert(43%) sepia(92%) saturate(1169%) hue-rotate(6deg) brightness(97%) contrast(101%);
 }
+
 nav #social a img {
   width: 20px;
   vertical-align: -25px;
@@ -179,52 +225,63 @@ nav #social a img {
 
 .logo {
   font-weight: 900;
+  -webkit-transition: 0.5s !important;
   transition: 0.5s !important;
-  font-size: 36px !important;
-  font-family: "Coda Caption", sans-serif;
+  font-size: 26px !important;
+  font-family: 'Coda Caption', sans-serif;
   letter-spacing: 3px;
 }
+
 @media screen and (max-width: 1024px) {
   .logo {
     display: block !important;
   }
 }
+
 .logo:hover {
-  transform: scale(1.5) !important;
+  -webkit-transform: scale(1.02) !important;
+          transform: scale(1.02) !important;
 }
 
 #banner .slick-prev {
   left: 50px;
   z-index: 2;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .slick-prev {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
   }
 }
+
 @media screen and (max-width: 767px) {
   #banner .slick-prev {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
   }
 }
+
 #banner .slick-next {
   right: 50px;
   z-index: 2;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .slick-next {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
   }
 }
+
 @media screen and (max-width: 767px) {
   #banner .slick-next {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
   }
 }
+
 #banner .slick-dots {
   bottom: 50px;
   z-index: 2;
 }
+
 #banner .banner1 {
   background-image: url(./img/banner1.png);
   height: 100vh;
@@ -232,47 +289,56 @@ nav #social a img {
   color: #e9e9e9;
   position: relative;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner1 {
     background-size: cover;
   }
 }
+
 #banner .banner1 .banner1::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   background-image: url(./img/banner1.jpg);
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   z-index: 5;
   background-size: cover;
 }
+
 #banner .banner1 .banner2::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   background-image: url(./img/banner2.jpg);
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   z-index: 5;
   background-size: cover;
 }
+
 #banner .banner1 .banner3::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   background-image: url(./img/banner3.jpg);
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   z-index: 5;
   background-size: cover;
 }
+
 #banner .banner1:focus {
   outline: none;
 }
+
 #banner .banner1 h2 {
   padding: 300px 0 100px;
   font-size: 60px;
@@ -280,28 +346,33 @@ nav #social a img {
   text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.9);
   color: #252525;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner1 h2 {
     padding: 600px 0 50px;
   }
 }
+
 @media screen and (max-width: 960px) {
   #banner .banner1 h2 {
     padding: 400px 0 50px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #banner .banner1 h2 {
     padding: 300px 0 30px;
     font-size: 36px;
   }
 }
+
 #banner .banner1 h3 {
   font-size: 24px;
   line-height: 1.5;
   text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.9);
   color: #252525;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner1 h3 {
     width: 80%;
@@ -310,6 +381,7 @@ nav #social a img {
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 960px) {
   #banner .banner1 h3 {
     width: 80%;
@@ -318,6 +390,7 @@ nav #social a img {
     font-size: 24px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #banner .banner1 h3 {
     width: 50%;
@@ -326,6 +399,7 @@ nav #social a img {
     line-height: 1.5;
   }
 }
+
 #banner .banner2 {
   background-image: url(./img/banner2.png);
   height: 100vh;
@@ -333,47 +407,56 @@ nav #social a img {
   color: #e9e9e9;
   position: relative;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner2 {
     background-size: cover;
   }
 }
+
 #banner .banner2 .banner1::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   background-image: url(./img/banner1.jpg);
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   z-index: 5;
   background-size: cover;
 }
+
 #banner .banner2 .banner2::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   background-image: url(./img/banner2.jpg);
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   z-index: 5;
   background-size: cover;
 }
+
 #banner .banner2 .banner3::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   background-image: url(./img/banner3.jpg);
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   z-index: 5;
   background-size: cover;
 }
+
 #banner .banner2:focus {
   outline: none;
 }
+
 #banner .banner2 h2 {
   padding: 300px 0 100px;
   font-size: 60px;
@@ -381,28 +464,33 @@ nav #social a img {
   text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.9);
   color: #252525;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner2 h2 {
     padding: 600px 0 50px;
   }
 }
+
 @media screen and (max-width: 960px) {
   #banner .banner2 h2 {
     padding: 400px 0 50px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #banner .banner2 h2 {
     padding: 300px 0 30px;
     font-size: 36px;
   }
 }
+
 #banner .banner2 h3 {
   font-size: 24px;
   line-height: 1.5;
   text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.9);
   color: #252525;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner2 h3 {
     width: 80%;
@@ -411,6 +499,7 @@ nav #social a img {
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 960px) {
   #banner .banner2 h3 {
     width: 80%;
@@ -419,6 +508,7 @@ nav #social a img {
     font-size: 24px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #banner .banner2 h3 {
     width: 50%;
@@ -427,6 +517,7 @@ nav #social a img {
     line-height: 1.5;
   }
 }
+
 #banner .banner3 {
   background-image: url(./img/banner3.png);
   height: 100vh;
@@ -434,47 +525,56 @@ nav #social a img {
   color: #e9e9e9;
   position: relative;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner3 {
     background-size: cover;
   }
 }
+
 #banner .banner3 .banner1::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   background-image: url(./img/banner1.jpg);
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   z-index: 5;
   background-size: cover;
 }
+
 #banner .banner3 .banner2::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   background-image: url(./img/banner2.jpg);
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   z-index: 5;
   background-size: cover;
 }
+
 #banner .banner3 .banner3::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   background-image: url(./img/banner3.jpg);
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   z-index: 5;
   background-size: cover;
 }
+
 #banner .banner3:focus {
   outline: none;
 }
+
 #banner .banner3 h2 {
   padding: 300px 0 100px;
   font-size: 60px;
@@ -482,28 +582,33 @@ nav #social a img {
   text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.9);
   color: #252525;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner3 h2 {
     padding: 600px 0 50px;
   }
 }
+
 @media screen and (max-width: 960px) {
   #banner .banner3 h2 {
     padding: 400px 0 50px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #banner .banner3 h2 {
     padding: 300px 0 30px;
     font-size: 36px;
   }
 }
+
 #banner .banner3 h3 {
   font-size: 24px;
   line-height: 1.5;
   text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.9);
   color: #252525;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner3 h3 {
     width: 80%;
@@ -512,6 +617,7 @@ nav #social a img {
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 960px) {
   #banner .banner3 h3 {
     width: 80%;
@@ -520,6 +626,7 @@ nav #social a img {
     font-size: 24px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #banner .banner3 h3 {
     width: 50%;
@@ -528,25 +635,31 @@ nav #social a img {
     line-height: 1.5;
   }
 }
+
 #banner .banner1 {
   background-position: -100px -50px;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner1 {
     background-position: center;
   }
 }
+
 #banner .banner2 {
   background-position: -120px;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner2 {
     background-position: center;
   }
 }
+
 #banner .banner3 {
   background-position: -200px -220px;
 }
+
 @media screen and (max-width: 1024px) {
   #banner .banner3 {
     background-position: center;
@@ -560,6 +673,7 @@ nav #social a img {
   margin: 0 auto;
   width: 100%;
 }
+
 #about .big_box {
   position: relative;
   height: 100vh;
@@ -567,21 +681,25 @@ nav #social a img {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
 }
+
 @media screen and (max-width: 1024px) {
   #about .big_box {
     height: 90vh;
   }
 }
+
 @media screen and (max-width: 960px) {
   #about .big_box {
     height: 100vh;
   }
 }
+
 @media screen and (max-width: 767px) {
   #about .big_box {
     height: 100vh;
   }
 }
+
 #about .big_box h2 {
   font-size: 48px;
   width: 100%;
@@ -589,23 +707,27 @@ nav #social a img {
   padding: 10px;
   color: #252525;
 }
+
 @media screen and (max-width: 1024px) {
   #about .big_box h2 {
     padding: 50px;
     font-weight: 900;
   }
 }
+
 @media screen and (max-width: 960px) {
   #about .big_box h2 {
     padding: 20px;
     font-weight: 900;
   }
 }
+
 @media screen and (max-width: 767px) {
   #about .big_box h2 {
     padding: 5px;
   }
 }
+
 #about .big_box p {
   font-size: 20px;
   width: 100%;
@@ -615,6 +737,7 @@ nav #social a img {
   font-weight: 500;
   line-height: 40px;
 }
+
 @media screen and (max-width: 1024px) {
   #about .big_box p {
     padding: 0 200px 50px;
@@ -622,6 +745,7 @@ nav #social a img {
     line-height: 60px;
   }
 }
+
 @media screen and (max-width: 960px) {
   #about .big_box p {
     padding: 10px 100px;
@@ -629,6 +753,7 @@ nav #social a img {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 767px) {
   #about .big_box p {
     width: 70%;
@@ -638,24 +763,29 @@ nav #social a img {
     margin: 0 auto;
   }
 }
+
 #about .mini_box {
   width: 1280px;
   margin: 0 auto;
   margin-top: 80px 0;
 }
+
 @media screen and (max-width: 1024px) {
   #about .mini_box {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 767px) {
   #about .mini_box {
     margin-top: 10px;
   }
 }
+
 #about .mini_box:focus {
   outline: none;
 }
+
 #about .mini_box img {
   width: 250px;
   height: 375px;
@@ -667,28 +797,35 @@ nav #social a img {
   /* 顯示模式：區塊 */
   margin: 0 auto;
   /* 區塊元素 block 才能margin:0 auto; */
+  -webkit-transition: 0.5s;
   transition: 0.5s;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
+
 @media screen and (max-width: 767px) {
   #about .mini_box img {
     width: 200px;
     height: 320px;
   }
 }
+
 #about .mini_box img:hover {
   border-radius: 1px;
 }
+
 #about .mini_box h3 {
   text-align: center;
   margin-top: 10px;
   color: #252525;
 }
+
 @media screen and (max-width: 1024px) {
   #about .mini_box h3 {
     margin-top: 30px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #about .mini_box h3 {
     margin-top: 20px;
@@ -700,51 +837,67 @@ nav #social a img {
   margin: 0 auto;
   padding: 20px 0;
 }
+
 @media screen and (max-width: 1024px) {
   #news {
     width: 100%;
     padding: 20px 20px;
   }
 }
+
 #news #news-content {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
 }
+
 @media screen and (max-width: 960px) {
   #news #news-content {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-gap: 50px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #news #news-content {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-gap: 50px;
   }
 }
+
 #news #news-content .news-card {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
+
 #news #news-content .news-card .recipe2 {
   position: absolute;
   left: 0;
   opacity: 1;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 #news #news-content .news-card .recipe2:hover {
   opacity: 0;
 }
+
 #news #news-content img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 #news #news-content h4 {
   text-align: center;
   padding: 10px;
 }
+
 #news #news-content p {
   line-height: 1.5;
   font-size: 14px;
@@ -756,14 +909,17 @@ nav #social a img {
   margin: 0 auto;
   overflow: hidden;
 }
+
 @media screen and (max-width: 1024px) {
   #work {
     width: 100%;
   }
 }
+
 #work:focus {
   outline: none;
 }
+
 #work img {
   width: 250px;
   height: 250px;
@@ -775,12 +931,16 @@ nav #social a img {
   /* 顯示模式：區塊 */
   margin: 0 auto;
   /* 區塊元素 block 才能margin:0 auto; */
+  -webkit-transition: 0.5s;
   transition: 0.5s;
-  box-shadow: 2px 10px 14px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 10px 14px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 10px 14px rgba(0, 0, 0, 0.5);
 }
+
 #work img:hover {
   border-radius: 20px;
 }
+
 #work h3 {
   text-align: center;
   margin-top: 30px;
@@ -796,51 +956,72 @@ form {
   margin: 0 auto;
   padding: 20px 0 100px;
 }
+
 @media screen and (max-width: 1024px) {
   form {
     width: 100%;
     padding: 20px 20px 100px;
   }
 }
+
 form input {
   width: 47%;
   padding: 10px;
 }
+
 @media screen and (max-width: 1024px) {
   form input {
     width: 100%;
     margin-bottom: 20px;
   }
 }
-form input::-moz-placeholder {
+
+form input::-webkit-input-placeholder {
   color: #999;
   font-size: 14px;
 }
+
 form input:-ms-input-placeholder {
   color: #999;
   font-size: 14px;
 }
+
+form input::-ms-input-placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
 form input::placeholder {
   color: #999;
   font-size: 14px;
 }
+
 form input[type=email] {
   float: right;
 }
+
 form textarea {
   width: 100%;
   height: 300px;
   margin: 30px 0;
   padding: 10px;
 }
-form textarea::-moz-placeholder {
+
+form textarea::-webkit-input-placeholder {
   color: #999;
   font-size: 14px;
 }
+
 form textarea:-ms-input-placeholder {
   color: #999;
   font-size: 14px;
 }
+
+form textarea::-ms-input-placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
 form textarea::placeholder {
   color: #999;
   font-size: 14px;
@@ -852,27 +1033,32 @@ footer {
   padding: 50px;
   text-align: center;
 }
+
 footer .logo {
   color: #e9e9e9;
   font-size: 14px;
   padding: 10px 0;
   text-decoration: none;
 }
+
 footer #link {
   padding: 1px 0;
 }
+
 footer #link a {
   color: #e9e9e9;
   text-decoration: none;
   font-size: 14px;
   padding: 0 5px;
 }
+
 @media screen and (max-width: 767px) {
   footer #link a {
     display: block;
     padding: 8px 0;
   }
 }
+
 footer #copy {
   color: #252525;
   font-size: 8px;
@@ -882,6 +1068,7 @@ main {
   width: 100%;
   height: 100%;
 }
+
 main .title-word {
   padding: 10px 0;
   font-size: 48px;
@@ -892,6 +1079,7 @@ main .title-word {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
+
 @media screen and (max-width: 1024px) {
   main .title-word {
     margin: 250px 400px 100px;
@@ -899,44 +1087,55 @@ main .title-word {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 960px) {
   main .title-word {
     margin: 250px 300px 100px;
     font-size: 70px;
   }
 }
+
 @media screen and (max-width: 767px) {
   main .title-word {
     margin: 200px 100px 100px;
     font-size: 60px;
   }
 }
+
 @-webkit-keyframes title-word {
   0% {
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
+
 @keyframes title-word {
   0% {
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
+
 main img {
   width: 1080px;
   display: block;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 1024px) {
   main img {
     width: 100%;
   }
 }
+
 main h3 {
   text-align: center;
   padding: 20px 0;
@@ -944,16 +1143,19 @@ main h3 {
   letter-spacing: 5px;
   font-size: 40px;
 }
+
 @media screen and (max-width: 1024px) {
   main h3 {
     font-size: 60px;
   }
 }
+
 @media screen and (max-width: 767px) {
   main h3 {
     font-size: 50px;
   }
 }
+
 main p {
   width: 50%;
   margin: 0 auto;
@@ -961,12 +1163,14 @@ main p {
   line-height: 2;
   font-size: 20px;
 }
+
 @media screen and (max-width: 1024px) {
   main p {
     width: 70%;
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 767px) {
   main p {
     font-size: 24px;
@@ -978,33 +1182,42 @@ section {
   height: 100%;
   margin: 100px auto;
 }
+
 @media screen and (max-width: 1024px) {
   section {
     width: 100%;
   }
 }
+
 section .boxing {
   width: 100%;
   margin: 0 auto;
 }
+
 section .boxing .box_magic {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 60% 40%;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
   grid-gap: 80px;
   margin-bottom: 100px;
 }
+
 @media screen and (max-width: 1024px) {
   section .boxing .box_magic {
-    grid-template-columns: none;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
     display: block;
   }
 }
+
 section .boxing .image_box {
   margin: 0 auto;
   padding: 0;
   display: block;
   width: 100%;
 }
+
 section .boxing img {
   width: 450px;
   height: 600px;
@@ -1012,104 +1225,137 @@ section .boxing img {
      object-fit: cover;
   margin: 0 100px;
 }
+
 @media screen and (max-width: 1024px) {
   section .boxing img {
     margin: 0 290px;
   }
 }
+
 @media screen and (max-width: 960px) {
   section .boxing img {
     margin: 0 160px;
   }
 }
+
 @media screen and (max-width: 767px) {
   section .boxing img {
     margin: 0 auto;
   }
 }
+
 section .boxing .text_box {
   margin: 0;
   padding-right: 30%;
   display: block;
   width: 100%;
 }
+
 @media screen and (max-width: 1024px) {
   section .boxing .text_box {
     margin: 0 auto;
   }
 }
+
 section .boxing h4 {
   text-align: center;
   padding: 20px 10px 10px;
   font-size: 32px;
   font-weight: bold;
 }
+
 @media screen and (max-width: 1024px) {
   section .boxing h4 {
     font-size: 40px;
   }
 }
+
 section .boxing p {
   font-size: 20px;
   padding: 10px 0;
   line-height: 2.5;
 }
+
 @media screen and (max-width: 1024px) {
   section .boxing p {
     width: 100%;
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 767px) {
   section .boxing p {
     font-size: 24px;
     line-height: 2;
   }
 }
+
 section .boxing .box_magic:nth-child(odd) {
-  grid-template-areas: "pic text";
-  grid-template-columns: 60% 40%;
+      grid-template-areas: "pic text";
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
 }
+
 @media screen and (max-width: 1024px) {
   section .boxing .box_magic:nth-child(odd) {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     margin: 0 auto;
   }
 }
+
 section .boxing .box_magic:nth-child(odd) .image_box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: pic;
 }
+
 section .boxing .box_magic:nth-child(odd) .text_box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: text;
   padding: 0 100px;
 }
+
 @media screen and (max-width: 767px) {
   section .boxing .box_magic:nth-child(odd) .text_box {
     padding: 0 30px;
   }
 }
+
 section .boxing .box_magic:nth-child(even) {
-  grid-template-areas: "text pic";
-  grid-template-columns: 40% 60%;
+      grid-template-areas: "text pic";
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
   margin-left: 15%;
 }
+
 @media screen and (max-width: 1024px) {
   section .boxing .box_magic:nth-child(even) {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     margin: 0 auto;
   }
 }
+
 section .boxing .box_magic:nth-child(even) .image_box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: pic;
 }
+
 section .boxing .box_magic:nth-child(even) .text_box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: text;
 }
+
 @media screen and (max-width: 1024px) {
   section .boxing .box_magic:nth-child(even) .text_box {
     padding: 0 100px;
   }
 }
+
 @media screen and (max-width: 767px) {
   section .boxing .box_magic:nth-child(even) .text_box {
     padding: 0 30px;
@@ -1127,17 +1373,21 @@ section .boxing .box_magic:nth-child(even) .text_box {
   border-radius: 5px;
   border: none;
   margin-bottom: 20px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .btn:hover {
   border: 1px solid #252525;
   background: #e9e9e9;
   color: #252525;
 }
+
 .btn a {
   text-decoration: none;
   color: #e9e9e9;
 }
+
 .btn a:hover {
   color: #252525;
 }
@@ -1169,35 +1419,44 @@ section .boxing .box_magic:nth-child(even) .text_box {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
+
 @media screen and (max-width: 1024px) {
   .title-new-word {
     font-size: 70px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .title-new-word {
     font-size: 64px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .title-new-word {
     font-size: 36px;
   }
 }
+
 @-webkit-keyframes title-new-word {
   0% {
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
+
 @keyframes title-new-word {
   0% {
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -1206,17 +1465,20 @@ section .boxing .box_magic:nth-child(even) .text_box {
   height: 800px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 1024px) {
   #carouselExampleFade {
     width: 100%;
     height: 700px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #carouselExampleFade {
     height: 300px;
   }
 }
+
 #carouselExampleFade .carousel-control-prev, #carouselExampleFade .carousel-control-next {
   display: none;
   color: #000 !important;
@@ -1226,26 +1488,32 @@ section .boxing .box_magic:nth-child(even) .text_box {
   width: 1280px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 1024px) {
   #delicious {
     width: 100%;
   }
 }
+
 #delicious .card {
   width: 100%;
 }
+
 #delicious .card .row {
   width: 1280px;
 }
+
 #delicious .card .row .food {
   width: 400px;
   padding: 30px;
 }
+
 @media screen and (max-width: 1024px) {
   #delicious .card .row .food {
     padding-top: 220px;
   }
 }
+
 @media screen and (max-width: 960px) {
   #delicious .card .row .food {
     padding-top: 0;
@@ -1253,6 +1521,7 @@ section .boxing .box_magic:nth-child(even) .text_box {
     opacity: 0.3;
   }
 }
+
 @media screen and (max-width: 767px) {
   #delicious .card .row .food {
     padding: 0;
@@ -1260,17 +1529,20 @@ section .boxing .box_magic:nth-child(even) .text_box {
     opacity: 1;
   }
 }
+
 #delicious .card .row .card-body {
   position: relative;
   width: 800px;
   padding: 30px;
 }
+
 @media screen and (max-width: 1024px) {
   #delicious .card .row .card-body {
     width: 75%;
     right: 40px;
   }
 }
+
 @media screen and (max-width: 960px) {
   #delicious .card .row .card-body {
     width: 80%;
@@ -1278,32 +1550,38 @@ section .boxing .box_magic:nth-child(even) .text_box {
     top: 20px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #delicious .card .row .card-body {
     width: 30%;
     right: 0;
   }
 }
+
 #delicious .card .row .card-body .card-title {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
 }
+
 @media screen and (max-width: 767px) {
   #delicious .card .row .card-body .card-title {
     font-size: 46px;
     text-align: center;
   }
 }
+
 #delicious .card .row .card-body .card-text {
   font-size: 18px;
   line-height: 1.7;
 }
+
 @media screen and (max-width: 1024px) {
   #delicious .card .row .card-body .card-text {
     font-size: 24px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #delicious .card .row .card-body .card-text {
     font-size: 20px;
@@ -1314,19 +1592,23 @@ section .boxing .box_magic:nth-child(even) .text_box {
   width: 100%;
   height: 100vh;
 }
+
 .games .carousel-control-prev {
   left: 0;
 }
+
 @media screen and (max-width: 960px) {
   .games .carousel-control-prev {
     left: -35px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .games .carousel-control-prev {
     left: 0;
   }
 }
+
 .games h2 {
   color: #fff;
   font-size: 72px;
@@ -1338,26 +1620,34 @@ section .boxing .box_magic:nth-child(even) .text_box {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
+
 @-webkit-keyframes slider-h2 {
   0% {
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
+
 @keyframes slider-h2 {
   0% {
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
+
 .games #good_box {
   position: relative;
   bottom: 100px;
 }
+
 .games .draw_box {
   position: relative;
   display: block;
@@ -1369,6 +1659,7 @@ section .boxing .box_magic:nth-child(even) .text_box {
   padding: 1em 2em;
   border-radius: 10px;
 }
+
 .games .draw_box .deck {
   position: absolute;
   display: block;
@@ -1377,6 +1668,7 @@ section .boxing .box_magic:nth-child(even) .text_box {
   left: 40%;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 1024px) {
   .games .draw_box .deck {
     bottom: -200px;
@@ -1384,12 +1676,14 @@ section .boxing .box_magic:nth-child(even) .text_box {
     left: 36%;
   }
 }
+
 @media screen and (max-width: 960px) {
   .games .draw_box .deck {
     left: 30%;
     bottom: -100px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .games .draw_box .deck {
     width: 200px;
@@ -1397,6 +1691,7 @@ section .boxing .box_magic:nth-child(even) .text_box {
     bottom: 20px;
   }
 }
+
 .games .draw_box .draw {
   position: absolute;
   display: block;
@@ -1404,9 +1699,11 @@ section .boxing .box_magic:nth-child(even) .text_box {
   width: 220px;
   left: 42%;
   margin: 0 auto;
+  -webkit-transition: 2s;
   transition: 2s;
   opacity: 0;
 }
+
 @media screen and (max-width: 1024px) {
   .games .draw_box .draw {
     width: 280px;
@@ -1414,12 +1711,14 @@ section .boxing .box_magic:nth-child(even) .text_box {
     left: 40%;
   }
 }
+
 @media screen and (max-width: 960px) {
   .games .draw_box .draw {
     left: 35%;
     top: -25px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .games .draw_box .draw {
     width: 150px;
@@ -1427,34 +1726,45 @@ section .boxing .box_magic:nth-child(even) .text_box {
     top: 50px;
   }
 }
+
 .games .draw_box .draw:hover {
-  transform: translateY(-250px);
+  -webkit-transform: translateY(-250px);
+          transform: translateY(-250px);
   opacity: 1;
 }
+
 @media screen and (max-width: 1024px) {
   .games .draw_box .draw:hover {
-    transform: translateY(-350px);
+    -webkit-transform: translateY(-350px);
+            transform: translateY(-350px);
   }
 }
+
 @media screen and (max-width: 767px) {
   .games .draw_box .draw:hover {
-    transform: translateY(-200px);
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
   }
 }
+
 .games .carousel-item {
   height: 100vh;
 }
+
 .games .carousel-item:nth-of-type(1) {
-  background: rgb(185, 235, 255) !important;
+  background: #b9ebff !important;
   background-image: url(./img/game_bg.png) !important;
   background-size: cover;
   background-image: blur(5px);
 }
+
 .games .carousel-item:nth-of-type(2) {
-  background: rgb(185, 235, 255) !important;
+  background: #b9ebff !important;
   background-image: url(./img/game_bg.png) !important;
 }
+
 .games .carousel-item:nth-of-type(3) {
-  background: rgb(185, 235, 255) !important;
+  background: #b9ebff !important;
   background-image: url(./img/game_bg.png) !important;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
